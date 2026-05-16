@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 GY457 Material Downloader
-Run this script to download all course materials from LSE Moodle.
-The browser profile from scrape_course.py is reused (login remembered).
+Uses Playwright for login (persistent profile), then requests for fast bulk download.
 """
 
 import asyncio
 import sys
+import time
 from pathlib import Path
+import requests
 from playwright.async_api import async_playwright
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -87,7 +88,6 @@ WT_LECTURES = [
 # Seminars
 # ──────────────────────────────────────────────────────────────
 SEMINARS = [
-    # AT 2025 Seminars
     ("AT_Seminar1.pdf",
      "https://moodle.lse.ac.uk/pluginfile.php/5059315/mod_resource/content/1/GY457%20SEMINAR%20Topic%201.pdf"),
     ("AT_Seminar2.pdf",
@@ -102,7 +102,6 @@ SEMINARS = [
      "https://moodle.lse.ac.uk/pluginfile.php/4378661/mod_resource/content/2/GY457%20SEMINAR%20Topic%208.pdf"),
     ("AT_Seminar9.pdf",
      "https://moodle.lse.ac.uk/pluginfile.php/4378715/mod_resource/content/2/GY457%20SEMINAR%20Topic%209.pdf"),
-    # WT 2026 Seminars
     ("WT_Seminar1_Debate.pdf",
      "https://moodle.lse.ac.uk/pluginfile.php/5754164/mod_resource/content/0/GY457%20Seminar%201%20%28w3%29%20-%20Debate%20-%202026_WT%20Gr%20A1%20%20A2%20.pdf"),
     ("WT_Seminar2_Debate.pdf",
@@ -122,7 +121,7 @@ SEMINARS = [
 ]
 
 # ──────────────────────────────────────────────────────────────
-# Extra Readings / Supplementary Materials
+# Extra Readings
 # ──────────────────────────────────────────────────────────────
 EXTRA_READINGS = [
     ("DiPasquale_Wheaton_1996_Ch01.pdf",
@@ -159,8 +158,6 @@ REVISION = [
      "https://moodle.lse.ac.uk/pluginfile.php/5004362/mod_resource/content/1/GY457_AT2025_syllabus.pdf"),
     ("Syllabus_WT2026.pdf",
      "https://moodle.lse.ac.uk/pluginfile.php/5757337/mod_resource/content/0/GY%20457%20Syllabus%20WT%202026%20-%20Blocks%20I-III%20v2.pdf"),
-    ("Pre_Mock_Guide.mp4",
-     "https://moodle.lse.ac.uk/pluginfile.php/5767417/mod_resource/content/0/GY457%20Pre-mock%20guide.mp4"),
 ]
 
 FILES = {
@@ -172,7 +169,8 @@ FILES = {
 }
 
 
-async def download_all():
+async def get_cookies():
+    """Open browser, wait for login, return cookies as dict."""
     async with async_playwright() as p:
         context = await p.chromium.launch_persistent_context(
             user_data_dir=str(PROFILE_DIR),
@@ -180,48 +178,79 @@ async def download_all():
             accept_downloads=True,
         )
         page = await context.new_page()
-
-        # Quick login check
         await page.goto("https://moodle.lse.ac.uk/course/view.php?id=12295")
-        await page.wait_for_load_state("networkidle")
-        title = await page.title()
 
-        if "Log in" in title:
-            print("Please log in to Moodle in the browser. Waiting...")
-            for _ in range(120):
+        # Wait until not on login page
+        print("Checking login status...")
+        for i in range(120):
+            try:
                 await asyncio.sleep(2)
-                t = await page.title()
-                if "Log in" not in t:
-                    print("Logged in!")
+                url = page.url
+                content = await page.content()
+                if "moodle.lse.ac.uk" in url and "login" not in url and "MoodleSession" in content or "loggedinas" in content:
                     break
+                if i == 0 and "Log in" in await page.title():
+                    print("Please log in to Moodle in the browser window...")
+                if i % 10 == 0 and i > 0:
+                    print(f"  Still waiting for login... ({i*2}s)")
+            except Exception:
+                await asyncio.sleep(2)
 
-        total = sum(len(v) for v in FILES.values())
-        done = 0
-
-        for folder, file_list in FILES.items():
-            target_dir = BASE_DIR / folder
-            target_dir.mkdir(exist_ok=True)
-
-            for filename, url in file_list:
-                target_path = target_dir / filename
-                if target_path.exists():
-                    print(f"  [skip] {filename}")
-                    done += 1
-                    continue
-
-                try:
-                    async with context.expect_download(timeout=60_000) as dl_info:
-                        await page.goto(url)
-                    download = await dl_info.value
-                    await download.save_as(target_path)
-                    done += 1
-                    print(f"  [{done}/{total}] {filename}")
-                except Exception as e:
-                    print(f"  [FAIL] {filename}: {e}")
+        # Extract cookies
+        cookies = await context.cookies()
+        cookie_dict = {c["name"]: c["value"] for c in cookies if "lse.ac.uk" in c.get("domain", "")}
+        print(f"Got {len(cookie_dict)} cookies from Moodle session")
 
         await context.close()
-        print(f"\nDone! Files saved in: {BASE_DIR}")
+        return cookie_dict
+
+
+def download_files(cookie_dict):
+    """Download all files using requests with the Moodle session cookies."""
+    session = requests.Session()
+    session.cookies.update(cookie_dict)
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    })
+
+    total = sum(len(v) for v in FILES.values())
+    done = 0
+    failed = []
+
+    for folder, file_list in FILES.items():
+        target_dir = BASE_DIR / folder
+        target_dir.mkdir(exist_ok=True)
+
+        for filename, url in file_list:
+            target_path = target_dir / filename
+            if target_path.exists() and target_path.stat().st_size > 1000:
+                print(f"  [skip] {filename}")
+                done += 1
+                continue
+
+            try:
+                resp = session.get(url, timeout=60, allow_redirects=True, stream=True)
+                if resp.status_code == 200 and len(resp.content) > 500:
+                    target_path.write_bytes(resp.content)
+                    size_kb = len(resp.content) // 1024
+                    done += 1
+                    print(f"  [{done}/{total}] {filename} ({size_kb} KB)")
+                else:
+                    print(f"  [FAIL {resp.status_code}] {filename} (size={len(resp.content)})")
+                    failed.append(filename)
+                time.sleep(0.3)
+            except Exception as e:
+                print(f"  [ERROR] {filename}: {e}")
+                failed.append(filename)
+
+    print(f"\nDone! {done}/{total} files downloaded to {BASE_DIR}")
+    if failed:
+        print(f"Failed ({len(failed)}): {', '.join(failed)}")
 
 
 if __name__ == "__main__":
-    asyncio.run(download_all())
+    cookies = asyncio.run(get_cookies())
+    if cookies:
+        download_files(cookies)
+    else:
+        print("No cookies obtained — login may have failed.")
