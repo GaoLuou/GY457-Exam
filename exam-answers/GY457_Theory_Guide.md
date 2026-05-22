@@ -44,6 +44,22 @@ The baseline model of urban spatial structure. Land goes to the highest bidder; 
 - AT Essay Q: "Critically assess the monocentric city model" → use as Part 1 foundation
 - AT Partitioned Q(a): "Two explanations for suburbanisation under AMM" → this is the direct answer
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+不能只说"收入高了就搬郊区"，必须走完逻辑链：**y↑ → q↑（normal good）→ 梯度 −t/q 变平 → 城市边界 x̄ 外扩**。这个链条要说全，少一步都显得很superficial。
+
+**表述关键：**
+- 先用一句话定义bid-rent是什么（"the maximum rent a household is willing to pay at distance x while maintaining constant utility"）
+- 再写公式 ∂p_q/∂x = −t/q，解释变量含义
+- 然后说机制（income → q → gradient flattens）
+- 最后接Baum-Snow (-18%) 作为实证支撑
+
+**两个机制怎么衔接：**
+> "A second driver of suburbanisation is falling commuting costs. A reduction in t directly flattens the bid-rent gradient by the same mechanism, making suburban locations more attractive. Heblich et al. (2020) show that London's steam railways triggered the first mass suburbanisation, consistent with this prediction."
+
+**常见失分点：** 把Rich/Poor的住址搞反（货币通勤成本下，Rich住郊区；但如果是时间成本，Rich住市中心 → 这是LeRoy-Sonstiele的逻辑）。两者不要混。
+
 ---
 
 ## MODEL 2 — Agglomeration & CBD Concentration
@@ -78,6 +94,21 @@ Why firms cluster near the CBD: not just transport access, but **productivity sp
 
 > "Firms concentrate near the CBD not merely for transport access but because productivity spillovers — especially knowledge spillovers — decay sharply with distance (Rosenthal & Strange 2020). The productivity function A_i = a·e^(−θD_i) implies that firms with high spatial decay parameter θ (finance, law, tech) have steep bid-rent curves and strong CBD incentives. Liotta et al. (2022) document a global rent gradient of −1.4% per km, consistent with this mechanism."
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+这个model的关键不是说"企业喜欢在CBD因为方便"，而是要讲**为什么具体是CBD**：因为knowledge spillovers极度局部（街区/楼层级别），高θ行业（金融、法律、科技）bid-rent曲线最陡 → CBD集聚最强。这个"why specifically CBD"是Mock考试反馈里点名缺失的内容。
+
+**三种集聚经济的空间尺度（这个很考）：**
+- Knowledge spillovers → 街区/建筑内（most localised）
+- Labour market pooling → 通勤区（metro-wide）
+- Input sharing → 区域（regional）
+
+答题时可以用一句话带过三种，然后重点讲knowledge spillovers最局部这一点，因为它最能解释CBD的存在。
+
+**表述衔接：**
+> "This explains why knowledge-intensive sectors such as finance and professional services cluster most tightly in the CBD, while manufacturing — with low θ — disperses to suburban or peri-urban locations."
+
 ---
 
 ## MODEL 3 — Bilateral Spillovers & Endogenous Agglomeration
@@ -110,6 +141,23 @@ The monocentric model treats CBD agglomeration as *given*. In reality, firms gen
 ### How to write it in exam
 
 > "A fundamental limitation of the monocentric model is its assumption that CBD agglomeration is exogenous. Ahlfeldt & Wendland (2013) show that firms generate bilateral spillovers with each other, captured by A_i = a_i·e^(−θD_i)·e^(βZ_i). This creates self-reinforcing clusters that can be stable at any location, generating multiple equilibria. The observed CBD structure is therefore historically contingent: Ahlfeldt et al. (2020) show that NYC's dense monocentric structure reflects its 1900 population of 3.4 million and early subway investment, while LA's dispersed structure reflects late urbanisation."
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+这是AT Essay里"批判性评估"部分的核心武器。用Model 1（AMM）做基础，然后用Model 3来说AMM的局限性：AMM假设CBD是外生给定的，但Ahlfeldt & Wendland证明集聚是**内生的、双向的**。
+
+**逻辑链（必须说全）：**
+1. AMM treats CBD as exogenous → 这是局限
+2. In reality: bilateral spillovers → e^(βZ_i) 项 → firms benefit from *other firms*
+3. → Self-reinforcing → can be stable anywhere → **multiple equilibria**
+4. → Which equilibrium we're in depends on **history** (path dependence)
+5. → NYC vs LA = same technology, different 1900 starting point → different outcomes
+
+**衔接到"will cities become more polycentric"：**
+> "If bilateral spillovers are strong (high β), existing clusters are hard to dislodge — the CBD advantage is self-perpetuating. However, if transport costs fall or congestion rises sufficiently, the balance can tip toward new stable clusters, generating polycentricity."
+
+**最容易丢的点：** 很多人知道"NYC有路径依赖"但不解释为什么。要说：bilateral spillovers → self-reinforcing → once established, cluster is stable → history determines which cluster.
 
 ---
 
@@ -146,6 +194,23 @@ Two routes to polycentric cities: sub-centres that emerge **organically** from m
 
 > "Sub-centres emerge organically when CBD congestion costs exceed the benefits of central access (Fujita & Ogawa 1982). McMillen & Smith (2003) identify sub-centres empirically as density peaks above the distance-predicted level. In contrast, edge cities are strategically built by a single developer who internalises agglomeration gains — Tyson's Corner exemplifies this, with 28 million sq ft of Class A office space exceeding DC's CBD (Henderson & Mitra 1996). Glaeser & Kahn (2001) find fewer than 29% of US jobs remain within 3 miles of the CBD, confirming the extent of decentralisation."
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+这个model主要服务于AT Essay的"Should cities become more polycentric?"部分，以及任何问到sub-centres/edge cities的题。关键是**区分两种类型**：有机形成（organic）和开发商建造（developer-built），两者机制完全不同。
+
+**Sub-centres重点说：**
+- 为什么形成：CBD congestion ↑ → decentralisation pressure → firms cluster elsewhere → new stable cluster
+- 实证识别方法说一句：density peak above distance-predicted level（这是McMillen & Smith的贡献）
+
+**Edge cities重点说：**
+- 单一开发商内化集聚收益（internalise agglomeration gains）— 这是关键词
+- 选址trade-off：靠近CBD获得spillovers vs 远离CBD节约土地/工资成本
+- Tyson's Corner数字：28m sq ft（比DC CBD的17m还大）
+
+**衔接到"会更多元中心吗"：**
+> "Whether polycentricity deepens depends on θ — the spatial decay of spillovers. In knowledge-intensive cities with high θ, CBD advantage remains strong, limiting sub-centre formation. In lower-θ cities or where congestion is severe, polycentric structures are more likely to emerge."
+
 ---
 
 ## MODEL 5 — LeRoy & Sonstiele (1983): 4-Stage Transport Cycle
@@ -177,6 +242,23 @@ A single theory that explains BOTH suburbanisation (rich move out) AND gentrific
 > "LeRoy & Sonstiele (1983) explain both suburbanisation and its reversal through a 4-stage transport cost cycle. New transport technologies are initially fast but expensive, adopted first by the rich. In Stage 2, wealthy households suburbanise to access cheap land via the new mode. Once the technology becomes affordable for all (Stage 3), the rich lose their differential commuting advantage and return to cities — driven by their higher time value and demand for non-tradeable urban amenities (Couture & Handbury 2020). By 2017, 92% of US households owned a car, consistent with this transition."
 
 > "The model's key assumption is that income elasticity of marginal commuting cost exceeds income elasticity of housing demand — the rich value time savings more than they value additional housing space, making central locations increasingly attractive once commuting costs equalise."
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+Mock Q2(b)直接考这个，40分。必须做到：
+1. **说清楚assumption**（时间价值弹性 > 住房需求弹性）— 这是模型成立的前提，很多人漏掉
+2. **4个阶段都能说出来**（不需要详细，但要有阶段名称和对应住所）
+3. **解释Stage 2→3的转变机制**（快速交通普及后富人失去差异化优势 → 回城）
+
+**这道题的特殊价值：** 它是"唯一一个能同时解释郊区化和绅士化"的理论。答题时要明确说：
+> "Unlike the AMM model which only explains suburbanisation, LeRoy & Sonstiele's framework explains both suburbanisation (Stage 2) and its reversal (Stage 3) within a single theoretical framework."
+
+**衔接到Couture & Handbury：**
+写完4阶段后加一句：
+> "Couture & Handbury (2020) provide complementary evidence: young, high-income professionals increasingly value non-tradeable urban amenities — restaurants, culture, nightlife — that are concentrated in city centres and unavailable in suburbs, reinforcing the Stage 3 return."
+
+**常见错误：** 把4个阶段全写成描述，但没有说assumption和机制。考官要看的是你理解**为什么**富人在每个阶段住在那里，不是单纯列出阶段。
 
 ---
 
@@ -220,6 +302,26 @@ Gentrification → N↑ → forced to consume more N than preferred → welfare 
 ### How to write it in exam
 
 > "Gentrification creates clear winners and potential losers depending on housing tenure and mobility costs. Homeowners unambiguously gain: rising neighbourhood quality N capitalises directly into property values, as evidenced by Harlem's 130% price appreciation in 2000–2006 compared to 45% in Midtown Manhattan (Guerrieri et al. 2013). For renters, the welfare effect is ambiguous and depends on mobility costs. With costless mobility, renters can relocate to their preferred neighbourhood and are approximately welfare-neutral. When mobility is costly and renters stay, they face forced overconsumption of N — a welfare loss unless they genuinely value the neighbourhood improvements. Empirically, US evidence suggests modest displacement (Ellen & O'Regan 2011), while UK evidence shows more significant displacement (Waights 2018), reflecting differences in rental tenure security."
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+Mock Q2(c) 30分，Mock反馈明确说：弱答案在"房主赢、租户输"就停了，这只有Pass水平。60分要求：
+
+**必须说到的四层：**
+1. **房主：unambiguously better off**（property value capitalises N↑，+Harlem 130% vs 45%）
+2. **租户：取决于mobility costs**（这是核心分析）
+3. **租户留下 vs 搬走**的分情况讨论（表格里4个场景至少说2个）
+4. **实证对比**：US（modest displacement）vs UK（significant displacement）
+
+**这道题的福利框架怎么写：**
+先说framework：households consume N and G, budget constraint Y = n·N + G。Gentrification → N↑ → forced overconsumption if preferences haven't changed → welfare loss。然后branching：mobility costs low → can move → welfare neutral；costs high → stuck → welfare loss unless amenities valued。
+
+**US vs UK的差异怎么衔接：**
+> "This contrast between US and UK evidence (Ellen & O'Regan 2011 vs Waights 2018) suggests that the welfare outcome for renters is highly context-dependent, reflecting differences in rental tenure security, housing benefit systems, and the strength of displacement pressures."
+
+**政治经济学（加分点）：**
+> "This distributional split has political economy implications: homeowners act as 'homevoters' supporting neighbourhood improvement, while renters act as 'leasevoters' opposing gentrification-inducing policies (Ahlfeldt & Maennig 2015)."
 
 ---
 
@@ -284,6 +386,23 @@ Place-based subsidies in supply-constrained areas → capitalised into land valu
 
 > "However, the efficiency result depends on assumptions routinely violated in practice. High mobility costs prevent low-income households from sorting freely. Education generates positive cross-boundary spillovers that Tiebout ignores, leading to under-provision. Furthermore, Hilber & Mayer (2009) show that supply elasticity fundamentally determines *who* benefits from fiscal improvements: in supply-constrained urban areas, improved school quality capitalises into prices (33% rate), benefiting homeowners rather than renters. In elastic rural areas, the capitalisation rate is only 10% as supply expands."
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+这道题的结构是：先说模型成立（mechanism + 实证支撑）→ 再系统批判（4个假设失效）→ 最重要的是加入supply elasticity这个维度（很多人漏掉这个）。
+
+**答题黄金结构：**
+1. 机制：variety + sorting + competition → efficiency（2句话）
+2. 实证支撑：Oates (1969) — £664/£1000；学校质量 1SD → 1.3%-10% 房价（2句话）
+3. 批判1：假设失效 — 重点讲mobility costs（最现实）和spillovers（教育外部性）
+4. 批判2（核心，高分）：**Supply elasticity mediates who benefits** — Hilber & Mayer 33% vs 10%
+5. Policy implication："help people not places"
+
+**供给弹性这个点怎么衔接：**
+> "A further limitation, not anticipated by Tiebout, is that the degree of fiscal capitalisation — and therefore who captures the fiscal surplus — depends critically on housing supply elasticity. Hilber & Mayer (2009) find that in supply-constrained urban areas, improved school quality raises prices by 33 cents per pound of expenditure, concentrating gains with homeowners. In elastic rural areas, the capitalisation rate falls to 10% as supply expands to accommodate new demand."
+
+**"Race to the bottom"要不要说：** 可以加一句，但不要展开，它属于加分点不是核心。
+
 ---
 
 ## MODEL 8 — Land Use Regulation: Market Failure vs Policy Failure
@@ -335,6 +454,29 @@ Two competing frameworks for why planning regulation exists and whether it is we
 
 > "Empirically, the costs appear to dominate. Hilber & Vermeulen (2016) estimate that US-style planning flexibility would reduce English house prices by 35%. Hsieh & Moretti (2019) find that removing US housing constraints would raise aggregate GDP by 2% annually. Cheshire's claim that policy failure exceeds market failure in Britain is well-supported."
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+Mock反馈明确：这道题"一阶概念缺口"是没有讲政治经济学理论（homevoter + influential landowner）。只讲市场失灵不够，必须讲为什么**政策**会失灵。
+
+**答题层次：**
+- 第一层（Pass）：市场失灵4个来源 + 简单提一下LUR可能过度
+- 第二层（Merit/60+）：讲清楚homevoter和influential landowner两个mechanism + 用H&V (35%) 和Hsieh & Moretti (2% GDP) 支撑成本远大于收益
+- 第三层（Distinction）：批判证据的局限性（capitalisation ≠ welfare maximisation）+ 综合结论
+
+**两个政治经济学理论的区别：**
+- Homevoter (Fischel)：**民主选举机制**被现有房主捕获 → 投票反对新建
+- Influential landowner (H&RN)：**游说机制**被大地主捕获 → 限制竞争、保护地租
+
+写答案时先写Fischel（更intuitive），再写H&RN（更sophisticated），最后说两者共同预测：开发程度越高的地区 → 限制越严格 → H&V实证证实。
+
+**实证证据怎么呈现：**
+不要只列数字，要说为什么这个数字说明policy failure > market failure：
+> "Hilber & Vermeulen (2016) estimate that if England had adopted US-level planning flexibility, house prices would be 35% lower. This scale of distortion — driven primarily by regulatory rather than physical constraints — is difficult to justify on market failure grounds alone, suggesting that policy failure is the dominant force."
+
+**一个好的conclusion句：**
+> "The implication is not to abolish planning — genuine externalities justify some regulation — but to redesign it to be less captured by existing property interests, working with markets rather than against them."
+
 ---
 
 ## MODEL 9 — Identification Problem & IV/2SLS
@@ -378,6 +520,27 @@ House prices and stock are non-stationary (trending). Regressing levels on level
 > "The identification problem arises because observed equilibrium (P*, Q*) lies simultaneously on both the supply and demand curves. OLS regression of Q on P is biased because price is jointly determined with quantity — we cannot distinguish supply from demand shifts."
 
 > "The solution is IV/2SLS with a demand-shifting instrument to identify the supply curve. The Bartik (1991) shift-share instrument exploits the interaction between local industry composition (fixed at a base year) and national industry employment trends. This generates exogenous variation in local demand, holding supply conditions fixed. The exclusion restriction — that national industry trends affect local housing only through income, not through construction costs — is plausible but not guaranteed."
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+这道题WT部分会直接考（Mock Q4 + 2013/14 Q6都考过）。识别问题（a）是基础，IV方法（b）是核心，方程（c）是加分，locational determinants（d）是深度。
+
+**识别问题（a）的表述套路：**
+三步走：
+1. 我们观察到的是均衡点(P*, Q*)，它同时在供给曲线和需求曲线上
+2. OLS回归 Q on P → biased，因为P和Q jointly determined（Cov(P,ε) ≠ 0）
+3. 所以估计的结果既不是供给曲线也不是需求曲线
+
+> "A simple OLS regression of quantity on price estimates neither the supply nor the demand curve — it estimates a weighted average of both, since price is jointly determined with quantity in equilibrium."
+
+**Bartik工具的排他性限制怎么解释：**
+> "The exclusion restriction requires that national industry employment trends affect local housing markets *only* through the income channel — not through direct effects on local construction costs or planning decisions. This is plausible since national trends are driven by aggregate factors outside any single region's control."
+
+**Mock考试最大错误（必须避免）：**
+- 有人建议用DiD（差分法）来估计弹性 — 这是错误的！DiD估计的是treatment effect，不是弹性的slope
+- 第一阶段第二阶段搞混（第一阶段回归的是价格，不是数量）
+- 用levels不用changes（non-stationarity问题 — Mayer & Somerville 2000就是因为这个才用changes）
 
 ---
 
@@ -423,6 +586,24 @@ Housing is highly durable — new construction is only 1–2% of total stock per
 
 > "Hilber & Vermeulen (2016) decompose supply constraints into physical (topographic) and regulatory components, finding that regulatory constraints (elasticity −0.13) dominate physical constraints (−0.09) in explaining English house price variation. Their counterfactual: US-like planning flexibility would reduce English house prices by 35%."
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+数字是这道题的命根。把4个关键弹性估计记住（0.08/6.3/1.7/1.16/0.014/0.16），然后能解释为什么这些数字有意义。
+
+**0.08 vs 6.3的解释（必考）：**
+不能只报数字，要说为什么差这么大：
+> "Mayer & Somerville (2000) distinguish stock elasticity (0.08) from new starts elasticity (6.3). The near-zero stock elasticity reflects housing durability — new construction accounts for only 1–2% of total stock annually, so even a large starts response barely moves the overall supply."
+
+**UK vs US弹性差异（必考）：**
+> "The UK average supply elasticity of 1.16 (Hilber & Mense 2025) is substantially lower than the US average of 1.7 (Saiz 2010), reflecting stricter planning regulation in the UK rather than differences in physical geography alone."
+
+**三个渠道（为什么developable land少 → 弹性低）：**
+很多人只说"土地少所以建不了" — 这太简单。60分要说三个渠道：cost channel + political economy（NIMBY/homevoter） + real options（option value → 开发商等待）。
+
+**政策含义这一段（Mock Q4c / 2013/14 Q6c）：**
+记住Hilber & Turner的结论：在非弹性市场，补贴完全无效甚至有害（subsidies → demand↑ → price↑↑ → 首付要求↑ → 反而减少homeownership）。这个反直觉结论是高分点。
+
 ---
 
 ## MODEL 11 — Real Estate Cycles: Supply Constraints Theory
@@ -459,6 +640,23 @@ Real estate price cycles as a **fundamental** phenomenon: demand shocks amplifie
 ### How to write it in exam
 
 > "One fundamental explanation for real estate cycles is the interaction of demand shocks with inelastic housing supply. In supply-constrained markets, positive demand shocks (income growth, population influx) cannot be absorbed by new construction, generating large price increases. These prices are serially correlated as expectations adjust and mean-reverting as supply eventually responds. Hilber & Vermeulen (2016) decompose supply constraints into physical (topographic, elasticity −0.09) and regulatory (planning, −0.13) components, finding regulatory constraints dominate in England. Their counterfactual implies that US-level planning flexibility would reduce English house prices by 35%."
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+这是WT Cycles Part(a)的Theory 1（fundamental explanation）。关键是要说清楚**为什么非弹性供给会产生周期**，而不只是说"供给弹性低所以价格高"。
+
+**核心逻辑链（必须走完）：**
+需求冲击（income↑ / population↑）→ 在非弹性供给市场 → 无法通过新建吸收 → 价格↑↑ → 序列相关（serial correlation）→ 最终均值回归（mean reversion）→ 这就是"周期"
+
+**Serial correlation + mean reversion这两个概念怎么解释：**
+> "This interaction generates the two defining features of real estate cycles: serial correlation — prices above trend tend to remain above trend as expectations adjust — and eventual mean reversion, as supply slowly responds or demand moderates."
+
+**SF vs Columbus的对比（必须举）：**
+San Francisco（非弹性）→ 极端繁荣-萧条；Columbus OH（弹性）→ 价格几乎没有波动。这是最直观的evidence，答题中一句话带过。
+
+**和Theory 2（loss aversion）怎么衔接：**
+> "While H&V (2016) offer a fundamentals-based explanation for cycles, a complementary behavioural account focuses on why prices fall more slowly than they rise — specifically, loss aversion (Genesove & Mayer 2001)."
 
 ---
 
@@ -498,6 +696,28 @@ A **behavioural** explanation for why house prices fall slowly in downturns: sel
 
 > "Genesove & Mayer (2001) apply prospect theory to explain downward price rigidity in housing markets. Sellers facing nominal losses — where purchase price exceeds current market value — resist accepting those losses, posting asking prices 3–18% above comparable non-loss sellers and achieving transaction prices 3–7% higher, though at the cost of significantly longer time on market. This loss aversion generates price stickiness in downturns: rather than prices falling quickly to clear the market, transaction volumes collapse while prices decline slowly. The mechanism explains why housing market recessions are characterised by quantity collapse before price adjustment."
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+这是WT Cycles Part(a)的Theory 2（behavioural explanation）。必须给三件事：mechanism + predictions + evidence。缺任何一个都是弱答案。
+
+**Mechanism的表述顺序：**
+1. 从prospect theory出发（losses feel more painful than equivalent gains）
+2. 应用到住房：reference point = 买入价格
+3. 当当前价格 < 买入价格 → nominal loss → 卖家拒绝接受损失
+4. → 挂牌价更高 → 在市场上停留更长 → 价格下行粘性
+
+**数字怎么用（必须精确）：**
+- Asking price高 **3–18%**（这是范围，反映LTV程度）
+- Transaction price高 **3–7%**（比挂牌价低 — 说明卖家部分妥协了，但仍显著高于无损失卖家）
+- LTV越高 → 账面损失越深 → 效应越强
+
+**Predictions怎么写（高分）：**
+> "Loss aversion generates three predictions: first, prices in downturns decline more slowly than fundamentals would predict; second, transaction volumes collapse before prices fall — sellers exit the market rather than accept losses; third, markets with higher leverage (more sellers in nominal loss territory) experience more prolonged price stickiness."
+
+**这个theory和H&V互补关系：**
+H&V解释为什么**upswing**那么大（非弹性供给放大需求冲击）；Loss aversion解释为什么**downswing**那么慢（价格向下粘性）。两者放在一起是完整的cycles解释。
+
 ---
 
 ## MODEL 13 — Cobweb Model & Construction Lag
@@ -533,6 +753,22 @@ Cyclical overshooting in construction due to the **time lag** between price sign
 
 > "The Cobweb model (Wheaton 1999) explains real estate cycles through construction lags. Developers respond to current prices, but supply only arrives 2–4 years later. If demand reverses before supply is delivered, the market is flooded with excess inventory, triggering a price crash. This creates self-sustaining cycles: oversupply → low prices → under-building → shortage → high prices → over-building. The mechanism is especially powerful in commercial real estate, where planning and construction timelines extend to 3–7 years."
 
+### 📌 中文备考注释
+
+**60分重点在哪：**
+Cobweb主要用在两个地方：① Part(a)选它作Theory之一（但不如H&V和Genesove & Mayer强）；② **LV/PHX Part(c)的核心解释**（20分）。
+
+**LV/PHX的解释套路（20分题别超过10分钟）：**
+三步：
+1. 说明paradox（弹性供给 → 按AMM理论不该有大价格周期）
+2. 解释：speculative demand（非基本面需求，由低利率/次贷驱动）+ Cobweb（建设时滞）
+3. 说弹性供给的paradox：弹性供给只能稳定**fundamental demand驱动**的价格，无法防止**speculative demand**驱动的周期
+
+> "The elastic supply paradox: unlike San Francisco where supply inelasticity amplified fundamental demand shocks, Las Vegas and Phoenix experienced both price *and* quantity booms driven by non-fundamental speculative demand. When speculative demand collapsed post-2006, elastic construction had generated massive excess inventory, amplifying rather than dampening the price crash."
+
+**商业地产 > 住宅地产的原因（可能单独考）：**
+两个渠道：更长的建设时滞（3-7年 vs 1-2年）+ 更长的租约（5-25年 → 需求调整更慢）。两者叠加 → 商业地产cobweb效应更强。
+
 ---
 
 ## MODEL 14 — Irrational Exuberance / Extrapolative Expectations
@@ -564,6 +800,22 @@ House prices deviate from fundamentals because buyers form **extrapolative expec
 ### How to write it in exam
 
 > "Case & Shiller (1988, 1989, 2003) document extrapolative expectations in housing markets: survey evidence shows that buyers in boom markets expect continued price appreciation at rates inconsistent with long-run fundamentals. This 'irrational exuberance' generates momentum beyond what supply-demand fundamentals can explain — rising prices fuel further buying, pushing prices further above equilibrium. The main empirical difficulty is distinguishing rational forward-looking expectations (which could also justify price rises if fundamentals are expected to improve) from truly irrational extrapolation. Survey data provides the most direct evidence but may not reflect actual trading behaviour."
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+Case & Shiller主要用于Part(b)（fundamentals vs deviation from equilibrium），而不是Part(a)（两个theories）。作为Part(b)的第三个实证方法（survey approach）来用。
+
+**Part(b)三种方法的分工：**
+1. **Capozza et al. (2004)** — 回归方法：看fundamentals解释不了的serial correlation还有多少
+2. **H&V (2016)** — 结构性IV：isolate residual beyond fundamentals
+3. **Case & Shiller surveys** — 直接问买家预期：发现boom市场的预期超出fundamentals → extrapolative
+
+**这个方法的核心困难（必须说）：**
+> "The central empirical challenge is that rational expectations and extrapolative expectations can generate observationally similar price paths. Survey data provides the most direct evidence but is subject to stated-preference bias — respondents may not act on their stated beliefs."
+
+**总结Part(b)的conclusion怎么写：**
+> "The empirical literature suggests that both fundamentals and non-fundamental deviations contribute to real estate cycles. In supply-constrained markets, fundamental demand shocks generate large price movements; behavioural factors — loss aversion (Genesove & Mayer) and extrapolative expectations (Case & Shiller) — amplify and prolong these movements beyond what fundamentals alone predict."
 
 ---
 
