@@ -652,23 +652,35 @@ Real estate price cycles as a **fundamental** phenomenon: demand shocks amplifie
 
 ### How to write it in exam
 
-**Step 1 — The demand shock:**
-> "A positive demand shock — rising income, population growth, or credit expansion — increases households' willingness to pay for housing at every location."
+**The core logic chain (H&V 2016):**
 
-**Step 2 — Why inelastic supply cannot absorb it:**
-> "In supply-constrained markets, new construction cannot respond quickly. Physical constraints (water bodies, steep terrain) and regulatory constraints (planning permission, zoning, green belts) make building slow and expensive. In the short run, housing stock is essentially fixed — the existing stock is durable and new starts represent only 1–2% of total stock per year (Mayer & Somerville 2000). The entire demand adjustment therefore falls on price."
+*Step 1 — Demand shock:*
+- Income↑ / population↑ / credit loosening → demand for housing ↑
 
-**Step 3 — Why prices show serial correlation (momentum):**
-> "Once prices rise above trend, they tend to keep rising — generating serial correlation. Three mechanisms sustain the upswing: (i) extrapolative expectations — buyers see recent price increases and expect them to continue, fuelling further demand (Case & Shiller 2003); (ii) construction lags — even where planning permits new supply, delivery takes 2–4 years, so supply relief is delayed; (iii) real option effects — developers in constrained markets delay building, waiting for higher prices, further suppressing supply (Grenadier 1995)."
+*Step 2 — Inelastic supply cannot absorb it:*
+- Physical constraints (water, steep slopes) + regulatory constraints (planning, zoning, green belts) → new construction slow and expensive
+- Housing is durable → new starts = only 1–2% of total stock per year (Mayer & Somerville 2000)
+- Short-run supply ≈ fixed → entire demand adjustment falls on **price**
 
-**Step 4 — Why prices eventually mean-revert:**
-> "Mean reversion occurs as the cycle matures: supply eventually arrives (even in constrained markets, some new construction occurs); income growth plateaus, limiting how far demand fundamentals can stretch; and credit conditions tighten, reducing purchasing power. Prices correct back toward fundamental value — completing the cycle."
+*Step 3 — Serial correlation (why prices keep rising above trend):*
+- Extrapolative expectations: buyers see prices rising → expect more rises → buy more → self-fulfilling (Case & Shiller 2003)
+- Construction lag: even with planning permission, delivery takes 2–4 years → supply relief delayed
+- Real option effect: developers wait for even higher prices before building → supply further suppressed (Grenadier 1995)
 
-**Step 5 — Why this only happens in inelastic markets:**
-> "In supply-elastic markets (e.g., Columbus, OH), the same demand shock triggers quantity adjustment rather than price adjustment. New construction absorbs excess demand quickly, preventing serial correlation from building. San Francisco's extreme boom-bust cycles versus Columbus's near-zero price volatility illustrates this contrast directly."
+*Step 4 — Mean reversion (why prices eventually fall back):*
+- Supply eventually arrives even in constrained markets
+- Income growth plateaus → demand fundamentals stop stretching
+- Credit tightens → purchasing power falls
+- → Prices correct back toward fundamental value → cycle completes
+
+*Step 5 — Why elastic markets don't get cycles:*
+- Elastic market (Columbus, Houston): same demand shock → quantity ↑, price ≈ stable → no serial correlation
+- Inelastic market (San Francisco, London): demand shock → price ↑↑, quantity ≈ stable → extreme boom-bust
 
 **H&V (2016) evidence:**
-> "Hilber & Vermeulen (2016) quantify these constraints for England, finding regulatory constraints have a larger effect (price elasticity −0.13) than physical constraints (−0.09). Their counterfactual: if England had adopted US-level planning flexibility, house prices would be 35% lower — reflecting decades of accumulated supply restriction amplifying demand shocks into persistent cycles."
+- Regulatory constraint elasticity: **−0.13** (larger effect than physical)
+- Physical constraint elasticity: **−0.09**
+- Counterfactual: US-like planning flexibility → English house prices **35% lower**
 
 ### 📌 中文备考注释
 
