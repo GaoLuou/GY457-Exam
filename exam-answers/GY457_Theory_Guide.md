@@ -860,6 +860,361 @@ Case & Shiller主要用于Part(b)（fundamentals vs deviation from equilibrium�
 
 ---
 
+## MODEL 15 — AT7: Skyscrapers & the Vertical Dimension
+*Liu et al. (2018), Ahlfeldt & McMillen (2018), Ahlfeldt & Barr (2022)*
+
+### What it is
+Extends the AMM model **vertically**: within a building, rent varies with floor height. Developers choose optimal building height by equating marginal revenue and marginal cost; height restrictions create welfare losses.
+
+### Core mechanism
+
+**Vertical rent gradient (Liu et al. 2018 — NYC office buildings):**
+- Rent ↑ with floor: premium = **8.58% per floor** above ground
+- Bottom floor (ground floor) discount: ~**13%** below average floor (noise, security, views)
+- Building height elasticity ω = **7.1%** (1% more height → 7.1% more total floor area)
+
+**Developer's optimal height:**
+- Build until: Marginal Revenue of an extra floor = Marginal Cost of that floor
+- Construction cost elasticity: **~2% per floor** (Ahlfeldt & McMillen 2018) — nonlinear, rising steeply at extreme heights
+- In a competitive land market: developer profit → 0 → entire surplus capitalised into **land price**
+- → Tall buildings → high land values, not developer rents
+
+**Trophy architecture (Ahlfeldt & Barr 2022):**
+- Iconic architects approved **extra 14 floors** (social status / landmark signalling)
+- Extra height adds **+13% construction cost** with little offsetting rent premium
+- → Suggests some skyscrapers exceed the socially efficient height
+
+**Height limits — welfare analysis:**
+- Height limits → FAR constrained → less floor area supplied → rents ↑, land price ↓
+- Population ↓, wages ↓ (fewer agglomeration benefits)
+- **Open city model:** workers move out → city shrinks → welfare loss
+- Relaxing height limits: population ↑, wages ↑ (more agglomeration), rents ↓ (more supply)
+
+**Skyscrapers ↔ urbanisation (bidirectional causality):**
+- More people → demand for central density → taller buildings
+- Taller buildings → more workers per unit land → agglomeration externalities ↑ → attracts more firms/workers
+- Endogeneity: cannot simply OLS-regress height on productivity; need IV (e.g., local geology)
+
+### Key papers & numbers
+
+| Paper | Key finding |
+|-------|------------|
+| Liu et al. (2018) | Vertical rent gradient: **8.58%/floor**; ground floor discount **~13%** |
+| Ahlfeldt & McMillen (2018) | Construction cost elasticity **~2%/floor** (nonlinear) |
+| Ahlfeldt & Barr (2022) | Trophy architects: +14 floors approved, +13% cost — status motive |
+| Height elasticity | ω = **7.1%** — 1% height → 7.1% floor area |
+
+### How to write it in exam
+
+- Open with: the AMM model captures horizontal urban structure; the vertical dimension adds a rent gradient *within* buildings, not just across distance from CBD
+- Core result: rent rises 8.58% per floor (Liu et al. 2018), reflecting views, status, and distance from street-level noise/security concerns
+- Developer behaviour: MR = MC determines optimal floor count; competition drives profit to zero → value capitalises into land
+- Height limits: use welfare chain → height limit → supply ↓ → rents ↑ → population ↓ → agglomeration ↓ → wages ↓ → net welfare loss
+- Trophy buildings: introduce as deviation from efficiency — social status signal → over-building relative to profit-max → supports view that some cities have too many vs too few floors
+- End: policy implication — relaxing height limits in dense cities (London, NYC) can increase housing/office supply without expanding city footprint
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+不能只说"越高层租金越贵"，必须给出 **mechanism + evidence + policy**。
+三件事全说：① 垂直租金梯度（8.58%/floor，底层discount 13%）② 开发商最优高度（MR=MC，竞争市场下利润=0，溢价全进地价）③ 限高政策的福利损失链
+
+**逻辑链（必走完）：**
+限高 → 建筑面积减少 → 租金↑（供给少）→ 人口↓（城市缩小）→ 集聚效益↓ → 工资↓ → 净福利损失
+
+**Trophy building怎么用：**
+作为对"市场有效"的反驳 — 部分高楼是status signal不是profit max，说明市场在vertical margin并不完全有效。
+
+**数字必须记：**
+- 8.58%/floor（Liu et al.）
+- ~13% 底层discount
+- ~2%/floor 建设成本弹性（Ahlfeldt & McMillen）
+- +14层 / +13%成本 （trophy architects, Ahlfeldt & Barr）
+
+**常见错误：**
+- 不提底层discount（这个和直觉相反，是考点）
+- 忘记说"利润=0 → 溢价进地价"（这是竞争市场的核心推论）
+- 政策分析只说租金影响，不说agglomeration / wages链条
+
+---
+
+## MODEL 16 — AT2: Agglomeration Externalities — Empirical Evidence
+*Ciccone & Hall (1996), Henderson (1988), Glaeser et al. (1992), Ahlfeldt & Feddersen (2018), Duranton & Puga (2001)*
+
+### What it is
+Attempts to **empirically identify** the causal effect of density / agglomeration on productivity. The core challenge is disentangling *agglomeration externalities* from *sorting* (more productive workers choose denser cities).
+
+### Core mechanism
+
+**The identification challenge:**
+- OLS: regress firm productivity on local density → γ = 0.04–0.07 (Ciccone & Hall 1996)
+- But: productive workers/firms sort into dense cities → OLS estimate is upward biased
+- Need to isolate *externalities* (being near others makes you more productive) from *sorting* (productive types chose to be here)
+
+**Three identification strategies:**
+
+**① City-level OLS (Ciccone & Hall 1996):**
+- Elasticity of output per worker w.r.t. employment density: **γ = 0.04–0.06**
+- "Doubling employment density raises average labour productivity by 6%"
+- Problem: cannot separate externalities from composition effects
+
+**② Individual/Establishment fixed effects:**
+- Track same worker/firm as they move from low- to high-density areas
+- Controls for time-invariant unobservable productivity differences (worker quality, management)
+- Elasticity: **γ ≈ 0.02** — roughly halves the OLS estimate
+- Still: workers who move to dense cities may be positively selected → residual bias
+
+**③ IV Panel — Ahlfeldt & Feddersen (2018), High-Speed Rail:**
+- Instrument: opening of high-speed rail connections → exogenous increase in market access
+- Mechanism: rail ↑ → effective density ↑ (more people within commuting distance) → agglomeration
+- Result: **γ = 2–3%** per doubling of effective density — more credibly causal
+- Key insight: IV elasticity similar to individual FE, suggesting most of city-level OLS bias is sorting
+
+**MAR vs Jacobs externalities:**
+
+| Type | Source | Mechanism |
+|------|---------|-----------|
+| MAR (Marshall-Arrow-Romer) | Localisation economies | Same-industry concentration → knowledge spillovers within sector |
+| Jacobs | Urbanisation economies | Cross-industry diversity → idea cross-pollination |
+| Henderson (1988) | Localisation | Elasticity **0.02–0.11** for own-industry concentration |
+| Glaeser et al. (1992) | Competition/diversity | Cities that grew fastest had more competition and diversity → Jacobs wins |
+
+**Nursery cities (Duranton & Puga 2001):**
+- Young firms benefit from **diversified** cities for experimentation
+- Mature firms benefit from **specialised** cities for production efficiency
+- Evidence: **72% of firm moves** are from diversified to specialised cities as firms mature
+- Implies: diversity and specialisation both optimal — at different firm life stages
+
+### Key papers & numbers
+
+| Paper | Key finding |
+|-------|------------|
+| Ciccone & Hall (1996) | City OLS density elasticity **0.04–0.06** |
+| Individual FE estimates | Density elasticity **≈ 0.02** (controls for sorting) |
+| Ahlfeldt & Feddersen (2018) | IV (HSR): **2–3%** per doubling effective density |
+| Henderson (1988) | Localisation economies: **0.02–0.11** |
+| Glaeser et al. (1992) | Jacobs/competition effects dominate in fast-growing cities |
+| Duranton & Puga (2001) | **72%** of firm moves: diversified → specialised (nursery cities) |
+
+### How to write it in exam
+
+- Frame as empirical challenge: agglomeration theory predicts density boosts productivity, but *how much* and *through what mechanism* is empirically contested
+- Walk through three strategies: OLS → individual FE → IV, with declining but still positive elasticities → "each step toward causality reduces the estimate but does not eliminate it"
+- Key interpretation: OLS 0.04–0.06 is biased by sorting; individual FE ≈ 0.02 controls for fixed productivity differences; IV (HSR) ≈ 2–3% most credibly causal
+- MAR vs Jacobs: Henderson supports MAR (specialisation); Glaeser supports Jacobs (diversity + competition)
+- Nursery cities: elegant reconciliation — both types useful, at different stages of firm life
+- Conclusion: agglomeration externalities are real and positive (~2% per doubling density, causally), but much smaller than naive cross-sectional correlations suggest
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+不能只罗列三种方法。必须说每种方法**解决了什么问题、还有什么偏差、数字是多少**。考官要看你理解为什么从OLS到IV是识别上的进步。
+
+**方法递进关系（必须说清）：**
+OLS (0.04-0.06) → **有sorting bias↑** → 个体固定效应 (0.02) → **控制了固定异质性，但移动是endogenous** → IV/HSR (2-3%) → **最可信的因果估计**
+
+**MAR vs Jacobs的答法：**
+先定义，再引证：
+- Henderson (1988): 专业化 → MAR效应成立 (0.02-0.11)
+- Glaeser et al. (1992): 多样化+竞争 → 城市增长更快 → Jacobs效应成立
+- 结论：两者都存在，在不同行业/城市规模下主导不同
+
+**Nursery cities怎么讲（加分项）：**
+"Duranton & Puga (2001) reconcile MAR vs Jacobs by noting that young firms benefit from diversity (experimentation), while mature firms benefit from specialisation (efficiency). The 72% share of moves from diversified to specialised cities supports this life-cycle interpretation."
+
+**常见错误：**
+- 只说OLS结果，不说bias方向
+- 说"IV更好"但不解释为什么HSR满足排他性限制（HSR影响effective density，不直接影响firm productivity）
+- 忘记nursery cities作为MAR/Jacobs的综合解释
+
+---
+
+## MODEL 17 — AT3: Rosen-Roback & Quality of Life
+*Rosen (1979), Roback (1982), Gibbons et al. (2011)*
+
+### What it is
+A **spatial equilibrium** framework: free mobility means households achieve equal utility across all cities; wages and rents adjust to compensate for differences in amenities (quality of life). The model allows us to *measure* quality of life from observable wages and rents.
+
+### Core mechanism
+
+**Spatial equilibrium condition:**
+> Workers are mobile → utility equalised across cities → differences in wages and rents must fully compensate for differences in amenities
+
+**Two types of amenity — opposite wage effects:**
+
+| Amenity type | Effect on wages | Effect on rents | Intuition |
+|---|---|---|---|
+| **Production amenity** (A↑) | w ↑ | r ↑ | Firms more productive → demand labour → bid up wages; workers flock → rents rise |
+| **Residential amenity** (a↑) | w ↓ | r ↑ | Workers *accept lower wages* to live in nicer place; all want to live there → rents bid up |
+
+**Intuition for residential amenity (a↑):**
+- City becomes more pleasant (sunshine, less crime, good schools)
+- Workers want to live there → housing demand ↑ → rents ↑
+- Labour supply ↑ (more workers want to be here) → wages ↓
+- Firms benefit: get same workers for lower wages → firm entry until profit = 0
+
+**Quality of life index:**
+> QoL_j = how much workers sacrifice in wages to live in city j (compensating wage differential)
+- Cities with high wages despite amenities → production amenities dominate
+- Cities with low wages despite high rents → residential amenities dominate
+- London/Brighton (Gibbons et al. 2011): **higher rents + lower wages** → residential amenity city
+
+**The implicit price of amenities:**
+> An amenity improvement (say, air quality ↑) → workers willing to accept lower wages → rent rises → the capitalisation of amenity into land rent = implicit price of the amenity
+
+**Optimal city size:**
+- Social net benefits of urbanisation: inverted-U curve
+  - Benefits: agglomeration externalities (productivity ↑)
+  - Costs: congestion (commuting, housing costs)
+- Market equilibrium: individuals don't internalise *negative congestion externality* they impose on others
+- → Market city is **too large** relative to social optimum
+- → Congestion tax / land value tax can correct over-urbanisation
+
+### Key papers & numbers
+
+| Paper | Key finding |
+|-------|------------|
+| Roback (1982) | Production amenity → w↑ r↑; residential amenity → w↓ r↑ |
+| Rosen (1979) | Compensating wage differentials: implicit price of amenities |
+| Gibbons et al. (2011) | UK: London/Brighton — high rents + lower wages → residential amenity dominant |
+| Ahlfeldt & Pietrostefani (2019) | Density benefit elasticity: **+0.04** (agglomeration) |
+| Duranton & Puga (2023) | Congestion cost elasticity: **−0.04** (symmetric) |
+
+### How to write it in exam
+
+- Open with: spatial equilibrium — mobile workers equalise utility across cities; wages and rents are the equilibrating variables
+- Core distinction: production vs residential amenity — opposite wage effects, same direction on rents
+- Derive explicitly: residential amenity ↑ → workers want to come → labour supply ↑ → wages ↓; housing demand ↑ → rents ↑
+- Quality of life measurement: the implicit price approach — wage sacrifice reveals how much workers value living there
+- UK evidence: Gibbons et al. (2011) — cities with high rents + below-average wages → residential amenities compensate workers for wage sacrifice → London/Brighton examples
+- Optimal city size: distinguish market equilibrium (agents ignore congestion externality they impose) from social optimum → welfare case for congestion pricing
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+Rosen-Roback最容易混淆的是生产型 vs 居住型amenity的wage方向。必须能**推导**，不能只背结论。
+
+**推导思路（production amenity A↑）：**
+A↑ → 企业生产率↑ → 企业增加劳动需求 → 工资w↑ → 工人被吸引来 → 住房需求↑ → 租金r↑
+结论：**w↑ r↑**（两者同向上升）
+
+**推导思路（residential amenity a↑）：**
+a↑ → 居住吸引力↑ → 工人涌入（劳动供给↑）→ 工资w↓（供给多了）
+→ 同时：住房需求↑ → 租金r↑
+→ 企业看到：同样工人只需付更少工资 → 企业也进来 → 进一步推高租金
+结论：**w↓ r↑**（工资下降，租金上升）
+
+**Quality of Life的测量方法（必须说清）：**
+> "Quality of life is measured by the wage differential workers accept to live in a city. A city with high rents but relatively low wages — like London — is revealed to have high residential amenity: workers sacrifice wage income to enjoy the quality of life there."
+
+**Gibbons et al. (2011) UK证据：**
+London, Brighton → high rents + lower wages than fundamentals → residential amenity dominant（阳光、文化、便利）
+此pattern和纯生产型城市（如曼彻斯特的工业时代）相反（那时候工资高但城市脏乱差）
+
+**Optimal city size的答法（如果考到）：**
+1. 定义social optimum：最大化所有居民净效用
+2. 个人进入城市的决策：比较城市和农村效用，不考虑自己加入对他人造成的拥挤成本
+3. → 负外部性（congestion）未内化 → 市场城市过大
+4. 政策工具：拥挤税 / 土地增值税
+
+**数字记法：**
+- Ahlfeldt & Pietrostefani: 集聚弹性 +0.04（收益）
+- Duranton & Puga: 拥挤弹性 −0.04（成本）
+- 两者对称 → 存在最优城市规模
+
+---
+
+## MODEL 18 — WT: Price-to-Rent Ratio & Commercial Real Estate Cycles
+*Gordon Growth Model; Wheaton (1999); Case & Shiller (1988); Favara & Imbs (2015)*
+
+### What it is
+The price-to-rent ratio (P/R) is the real estate equivalent of a P/E ratio in equities: it reflects how much buyers pay per unit of current income. Understanding why P/R varies — across cities, over time, and between asset classes — is central to diagnosing bubbles vs rational expectations.
+
+### Core mechanism
+
+**Gordon Growth Model:**
+> P = R / (r − g)
+> → P/R = 1 / (r − g)
+
+- P = property price; R = rental income; r = required return / discount rate; g = expected rental growth rate
+- P/R rises when: **r falls** (lower interest rates → lower required return) OR **g rises** (higher expected rent growth)
+- P/R falls when: r rises (monetary tightening) OR g falls (demand weakness, vacancies)
+
+**Why prices are more cyclical than rents:**
+
+| Reason | Mechanism |
+|--------|-----------|
+| **Speculation** | Capital values reflect future expectations; rents reflect current cash flows only |
+| **Long commercial leases** | Rents locked in 5–25 years → slow to adjust to market conditions |
+| **Interest rate sensitivity** | ΔP ≈ ΔR/(r-g)² × Δr → small Δr → large ΔP; rents unaffected by discount rates |
+| **Extrapolative expectations** | Buyers bid up capital values based on past price growth; tenants negotiate rents based on current market |
+
+**Commercial RE cycles > residential (why amplification is stronger):**
+- **Longer construction lag:** office/retail: 3–7 years → cobweb amplification larger than residential (1–2 years)
+- **GDP-sensitive demand:** office occupancy tracks employment cycles; retail tracks consumer spending → demand more volatile
+- **Lease structure:** 5–25 year leases → rents cannot adjust quickly → vacancy absorbs demand shocks → prices must overshoot to signal eventual rent adjustment
+- **Higher option value:** commercial development is more lumpy → real options delay construction → supply responds even more slowly
+
+**Superstar cities — P/R above fundamentals:**
+- **Rational explanation:** expected rent growth g is genuinely higher in supply-constrained cities (London, NYC, SF) → P/R = 1/(r−g) is legitimately high → not a bubble
+- **Behavioural explanation (Case & Shiller):** extrapolative expectations → buyers expect past appreciation to continue → irrational exuberance → P/R overshoots even rational forward-looking value
+- Distinguishing the two: can P/R stay permanently elevated? Rational model: yes, if g > g_other cities persistently (network effects, planning constraints). Behavioural: eventually corrects when expectations reset.
+
+**Credit conditions (Favara & Imbs 2015):**
+- Branch deregulation in US → exogenous credit supply shock → explains **50–67%** of mortgage origination growth
+- Credit expansion → demand ↑ → prices ↑ → P/R ↑ independently of fundamentals
+- Implication: P/R rises not just from lower r (via central bank) but also from credit supply expansion (securitization, bank deregulation)
+
+### Key papers & numbers
+
+| Paper | Key finding |
+|-------|------------|
+| Gordon Growth Model | P/R = 1/(r−g): P/R rises when r↓ or g↑ |
+| Wheaton (1999) | Cobweb: commercial lag 3–7y > residential 1–2y → bigger cycles |
+| Case & Shiller (1988) | Extrapolative expectations → P overshoots; survey evidence of irrational exuberance |
+| Favara & Imbs (2015) | Credit supply explains **50–67%** of US mortgage growth → P/R rise |
+| H&V (2016) | Supply inelasticity amplifies P/R cycles in constrained markets |
+
+### How to write it in exam
+
+- Start with Gordon model: P/R = 1/(r−g) — clear, quantitative framework for what drives the ratio
+- Explain why P is more volatile than R: leases lock in rents; prices reflect forward-looking expectations; interest rate changes hit P immediately
+- Commercial > residential: walk through construction lag (3–7y) + lease length (5–25y) + GDP sensitivity — three reinforcing amplifiers
+- Superstar cities: offer both rational (high g from supply constraints + agglomeration) and behavioural (extrapolative, Case & Shiller) explanation — conclude that both contribute but the distinction matters for policy
+- Credit: Favara & Imbs shows P/R is not just a monetary story — credit supply matters independently
+- Policy: using P/R as an indicator of bubble risk — limitations (high P/R can be rational in low-r environments); importance of distinguishing r-driven vs g-driven vs credit-driven increases
+
+### 📌 中文备考注释
+
+**60分重点在哪：**
+P/R ratio的核心是Gordon Growth Model的推导和应用。必须能从 P = R/(r-g) 解释：① 为什么P比R波动大 ② 为什么commercial RE周期比residential更大
+
+**Gordon Growth Model用法：**
+> "P/R = 1/(r−g). A fall in the discount rate from 8% to 6% while g=2% raises P/R from 1/(0.08−0.02) = 16.7 to 1/(0.06−0.02) = 25 — a 50% increase in price with no change in current rent. This explains why property prices are more interest-rate sensitive than rents."
+
+**Prices > Rents的三个原因（必须分点）：**
+1. **投机性 / 预期**：价格=贴现未来现金流，包含预期；租金=当前合同
+2. **长期租约锁定**：commercial rent固定5-25年，无法快速上涨
+3. **折现率敏感性**：r变化 → P = R/(r-g)大幅变动；R不受r影响
+
+**Commercial > Residential的解释（必须给三点）：**
+1. 建设时滞更长（3-7年 vs 1-2年）→ cobweb效应更大
+2. 需求对GDP更敏感（办公室需求∝就业，零售∝消费）→ demand更volatile
+3. 租约更长（5-25年）→ 租金调整更慢 → 价格必须overshooting才能传递信号
+
+**Superstar cities P/R高是泡沫吗？**
+两个立场都要说：
+- **理性**: g合理高 — 供给受限 + 网络效应 → 租金预期增长真的高 → P/R高是基本面
+- **非理性**: Case & Shiller — extrapolative expectations → P比fundamentals还高 → 最终correction
+结论: 两者都可能，区分关键看g的预期是否实现（超级城市rental growth是否持续）
+
+**数字：**
+- Favara & Imbs: 50-67% 美国房贷增长由信贷供给解释（不是需求驱动）
+- Commercial lag: 3-7年（vs residential 1-2年）
+- Commercial leases: 5-25年（key to slow adjustment）
+
+---
+
 ---
 
 # MASTER KEY NUMBERS (memorise all of these)
@@ -887,3 +1242,15 @@ Case & Shiller主要用于Part(b)（fundamentals vs deviation from equilibrium�
 | **3–18% / 3–7%** | Genesove & Mayer (2001) | Loss aversion: asking / transaction price premium |
 | **£664 / £1,000** | Oates (1969) | Tax capitalisation into house prices (67%) |
 | **1.3%–10%** | Gibbons et al. etc. | School quality 1SD → house price premium |
+| **8.58%/floor** | Liu et al. (2018) | Vertical rent gradient in NYC office buildings |
+| **~13%** | Liu et al. (2018) | Ground floor discount vs average floor |
+| **7.1%** | Liu et al. (2018) | Building height elasticity (1% height → 7.1% floor area) |
+| **~2%/floor** | Ahlfeldt & McMillen (2018) | Construction cost elasticity (nonlinear) |
+| **+14 floors / +13% cost** | Ahlfeldt & Barr (2022) | Trophy architects: extra floors approved, cost premium |
+| **0.04–0.06** | Ciccone & Hall (1996) | OLS density elasticity (city level) |
+| **~0.02** | Individual FE estimates | Agglomeration elasticity after controlling sorting |
+| **2–3%** | Ahlfeldt & Feddersen (2018) | IV (HSR) agglomeration elasticity — most causal |
+| **0.02–0.11** | Henderson (1988) | Localisation economies elasticity |
+| **72%** | Duranton & Puga (2001) | Firm moves from diversified → specialised (nursery cities) |
+| **+0.04 / −0.04** | Ahlfeldt & Pietrostefani (2019) / Duranton & Puga (2023) | Density benefit / congestion cost elasticity (symmetric) |
+| **50–67%** | Favara & Imbs (2015) | US mortgage growth explained by credit supply expansion |
