@@ -589,14 +589,15 @@ Housing is highly durable — new construction is only 1–2% of total stock per
 **Policy implications (2013/14 Q6c — "why does it matter for investors and policymakers?"):**
 
 *For investors:*
-- Elastic market (e.g., Houston): demand shock → quantity ↑, price stable → predictable rental yields, lower capital gain risk
-- Inelastic market (e.g., London): demand shock → price ↑↑ → higher appreciation potential but larger downside risk
-- Knowing elasticity allows portfolio positioning: overweight inelastic markets for price appreciation; expect stable income returns in elastic markets
+- **Inelastic market** (London, SF): demand shock → price ↑↑, quantity ≈ stable → high capital gain potential, high downside risk
+- **Elastic market** (Houston, Phoenix): demand shock → quantity ↑, price ≈ stable → predictable rental yields, low price volatility
+- Knowing elasticity allows portfolio positioning accordingly
 
-*For policymakers — the counter-intuitive result:*
-> "Hilber & Turner (2014) find that housing subsidies — such as the UK's Help-to-Buy or the US mortgage interest deduction — have zero average effect on homeownership rates nationally, and a **negative effect** in supply-inelastic markets. The mechanism: subsidy → demand ↑ → in inelastic markets, price ↑↑ rather than quantity ↑ → deposit requirements rise → first-time buyers are priced out further. The subsidy is captured by existing owners, not the intended beneficiaries."
-
-> "This implies that the policy value of knowing supply elasticity is substantial: interventions designed to expand homeownership are only effective where supply can actually respond. In constrained markets, 'help people not places' — direct transfers to households outperform place-based subsidies that capitalise into land values."
+*For policymakers — counter-intuitive result (Hilber & Turner 2014):*
+- Housing subsidies (UK Help-to-Buy, US mortgage interest deduction) have **zero average effect** on homeownership nationally
+- In inelastic markets: subsidy → demand ↑ → price ↑↑ (not quantity ↑) → deposit requirements ↑ → first-time buyers priced out further → **negative effect on homeownership**
+- The subsidy is captured by existing owners as a capital gain, not by the intended beneficiaries
+- Policy implication: **"help people, not places"** — direct transfers to households outperform place-based subsidies in constrained markets
 
 ### 📌 中文备考注释
 
