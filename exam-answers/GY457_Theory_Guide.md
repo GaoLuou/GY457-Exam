@@ -652,7 +652,23 @@ Real estate price cycles as a **fundamental** phenomenon: demand shocks amplifie
 
 ### How to write it in exam
 
-> "One fundamental explanation for real estate cycles is the interaction of demand shocks with inelastic housing supply. In supply-constrained markets, positive demand shocks (income growth, population influx) cannot be absorbed by new construction, generating large price increases. These prices are serially correlated as expectations adjust and mean-reverting as supply eventually responds. Hilber & Vermeulen (2016) decompose supply constraints into physical (topographic, elasticity −0.09) and regulatory (planning, −0.13) components, finding regulatory constraints dominate in England. Their counterfactual implies that US-level planning flexibility would reduce English house prices by 35%."
+**Step 1 — The demand shock:**
+> "A positive demand shock — rising income, population growth, or credit expansion — increases households' willingness to pay for housing at every location."
+
+**Step 2 — Why inelastic supply cannot absorb it:**
+> "In supply-constrained markets, new construction cannot respond quickly. Physical constraints (water bodies, steep terrain) and regulatory constraints (planning permission, zoning, green belts) make building slow and expensive. In the short run, housing stock is essentially fixed — the existing stock is durable and new starts represent only 1–2% of total stock per year (Mayer & Somerville 2000). The entire demand adjustment therefore falls on price."
+
+**Step 3 — Why prices show serial correlation (momentum):**
+> "Once prices rise above trend, they tend to keep rising — generating serial correlation. Three mechanisms sustain the upswing: (i) extrapolative expectations — buyers see recent price increases and expect them to continue, fuelling further demand (Case & Shiller 2003); (ii) construction lags — even where planning permits new supply, delivery takes 2–4 years, so supply relief is delayed; (iii) real option effects — developers in constrained markets delay building, waiting for higher prices, further suppressing supply (Grenadier 1995)."
+
+**Step 4 — Why prices eventually mean-revert:**
+> "Mean reversion occurs as the cycle matures: supply eventually arrives (even in constrained markets, some new construction occurs); income growth plateaus, limiting how far demand fundamentals can stretch; and credit conditions tighten, reducing purchasing power. Prices correct back toward fundamental value — completing the cycle."
+
+**Step 5 — Why this only happens in inelastic markets:**
+> "In supply-elastic markets (e.g., Columbus, OH), the same demand shock triggers quantity adjustment rather than price adjustment. New construction absorbs excess demand quickly, preventing serial correlation from building. San Francisco's extreme boom-bust cycles versus Columbus's near-zero price volatility illustrates this contrast directly."
+
+**H&V (2016) evidence:**
+> "Hilber & Vermeulen (2016) quantify these constraints for England, finding regulatory constraints have a larger effect (price elasticity −0.13) than physical constraints (−0.09). Their counterfactual: if England had adopted US-level planning flexibility, house prices would be 35% lower — reflecting decades of accumulated supply restriction amplifying demand shocks into persistent cycles."
 
 ### 📌 中文备考注释
 
