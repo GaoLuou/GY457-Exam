@@ -164,12 +164,17 @@ The monocentric model treats CBD agglomeration as *given*. In reality, firms gen
 
 ### Core mechanism
 
-**Extended productivity function:**
-> A_i = a_i · e^(−θD_i) · e^(βZ_i)
+**Extended productivity function (Ahlfeldt & Wendland 2013):**
+> A_i = a_i · e^(−θD_i) · e^(βZ_i)，where **Z_i = Σⱼ χⱼ · e^(−τ·d_ij)**
 
-- Z_i = proximity-weighted output of *all other firms* (not just CBD)
-- β = strength of bilateral spillovers
-- Firms benefit from *other firms nearby*, not just from being near the historical centre
+变量含义：
+- **θ** = 集聚溢出随CBD距离 D_i 的衰减速度（从CBD向外衰减）
+- **β** = bilateral spillovers的强度系数
+- **Z_i** = firm i感受到的来自所有其他firm j的加权溢出总量
+  - **χⱼ** = firm j的产出
+  - **e^(−τ·d_ij)** = 距离权重：两企业之间距离 d_ij 越大，溢出按速率 τ 指数衰减
+  - → Z_i 越大，说明firm i附近有更多高产出企业
+- 关键区别：θ 控制"距CBD的溢出衰减"，τ 控制"企业间双向溢出的衰减"——两个独立参数
 
 **Implications:**
 - Clusters can be self-sustaining **anywhere**, not just at a historical CBD
