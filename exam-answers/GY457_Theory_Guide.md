@@ -489,6 +489,23 @@ Place-based subsidies in supply-constrained areas → capitalised into land valu
 ### What it is
 Two competing frameworks for why planning regulation exists and whether it is welfare-improving. Cheshire (2013): in Britain, **policy failure > market failure**.
 
+### Two stylized facts (2019 Q1a / 2021 Q1A — must know)
+
+**Fact 1: LUR varies enormously in shape and scope across space**
+- Inner cities have tighter restrictions than suburbs; UK far tighter than US
+- **Explanation (H&RN 2013):** areas that are already more developed → existing owners dominate → lobby harder for restrictions → more developed = more restrictive
+- H&V (2016) confirm: regulatory constraint elasticity = **−0.13** (stronger than physical −0.09) — regulatory constraints dominate physical ones
+
+**Fact 2: LUR has become more widespread and stringent over time**
+- **Explanation (Fischel 2000):** homeownership rates rose steadily through 20th century → larger share of voters have assets tied to property values → more political pressure for restriction over time
+- Also: rising income → more demand for "neighbourhood quality" / amenity protection → collective lobbying for LUR increases
+
+**Inner city paradox (2019 Q1d):**
+- Inner cities have both *tight* LUR AND *low* homeownership — apparently contradictory
+- Resolution: tight LUR → supply constrained → prices ↑↑ → fewer people can afford to buy → more renters
+- Renters don't vote for restrictions (renters ≠ homevoters) — but by the time they arrive, restrictions are already entrenched by existing owners
+- → LUR protects incumbent homeowners at the expense of aspiring homeowners and renters
+
 ### Market failure — 4 justifications for LUR
 
 1. **Negative externalities** — development causes congestion, pollution, visual intrusion → private over-development
@@ -496,7 +513,16 @@ Two competing frameworks for why planning regulation exists and whether it is we
 3. **Coordination failure (hold-out problem)** — land assembly for large developments requires all owners to agree; one strategic hold-out blocks socially beneficial redevelopment
 4. **Information asymmetry** — planners may know more about infrastructure capacity than developers
 
-### Policy failure — 2 mechanisms
+### Policy failure — why it exceeds market failure
+
+**The core argument:**
+- Market failure justifies regulation **up to** the social optimum (correct externalities, no more)
+- But planning is not set by a benevolent planner — it is a **political process** captured by concentrated interest groups
+- → Regulation is pushed **beyond** the social optimum → creates additional DWL not present in the market failure
+- → The net welfare cost of excessive restriction *exceeds* the original market failure it was supposed to fix
+- Evidence: London West End regulatory tax = **809%** of construction cost — this scale of distortion cannot be justified by externalities alone
+
+**2 mechanisms of political capture:**
 
 **1. Homevoter hypothesis (Fischel 2000):**
 - Housing = middle-class households' primary (undiversifiable) asset
@@ -508,6 +534,14 @@ Two competing frameworks for why planning regulation exists and whether it is we
 - Already-developed landowners lobby for restrictions → constrained supply → their land rents rise
 - Prediction: areas that are already developed → more restrictive planning → higher prices → larger cycles
 - Endogenous regulation: areas with high demand attract stricter controls (confirmed by H&V 2016)
+
+**Three-theory comparison:**
+
+| Theory | Mechanism | Prediction |
+|--------|-----------|------------|
+| Tiebout (1956) | Jurisdictional competition | LUR is efficient — competition disciplines planners |
+| Fischel (2000) | Homevoter democracy | Excessive restriction — homeowners capture the vote |
+| H&RN (2013) | Landowner lobbying | Restriction ∝ development level — more developed = more constrained |
 
 ### Empirical evidence
 
@@ -535,25 +569,36 @@ Two competing frameworks for why planning regulation exists and whether it is we
 ### 📌 中文备考注释
 
 **60分重点在哪：**
-Mock反馈明确：这道题"一阶概念缺口"是没有讲政治经济学理论（homevoter + influential landowner）。只讲市场失灵不够，必须讲为什么**政策**会失灵。
+Mock反馈明确："一阶概念缺口"是没有讲政治经济学理论（homevoter + influential landowner）。但更常被忽略的是：光说"policy failure存在"还不够，必须说清楚**为什么policy failure比market failure更严重**。
 
 **答题层次：**
-- 第一层（Pass）：市场失灵4个来源 + 简单提一下LUR可能过度
-- 第二层（Merit/60+）：讲清楚homevoter和influential landowner两个mechanism + 用H&V (35%) 和Hsieh & Moretti (2% GDP) 支撑成本远大于收益
-- 第三层（Distinction）：批判证据的局限性（capitalisation ≠ welfare maximisation）+ 综合结论
+- 第一层（Pass）：市场失灵4个来源 + 简单提LUR可能过度
+- 第二层（Merit/60+）：① 说清楚为什么policy failure > market failure（政治过程把regulation推过social optimum）② 两个political economy机制 ③ H&V (-35%)、809%、+2% GDP支撑
+- 第三层（Distinction）：批判evidence的局限性（capitalisation ≠ welfare maximisation）+ 有力结论句
+
+**为什么policy failure > market failure（这个必须写）：**
+逻辑链：
+- Market failure → 有理由管制（到social optimum为止）
+- 但规划是政治过程 → 被homevoter/大地主捕获 → 管制超过social optimum
+- 超出部分 = 额外的DWL（这部分是纯policy failure造成的）
+- 如果额外DWL > 原始market failure DWL → policy failure占主导
+- 实证：809% regulatory tax不可能被外部性理由解释
+
+**两个stylized facts怎么答（2019/2021必考）：**
+- **为什么空间上差异大** → H&RN：开发程度越高 → 已开发利益占主导 → 限制越严
+- **为什么随时间越来越严** → Fischel：homeownership rate上升 → homevoters增多 → 政治压力增强
+- **Inner city paradox（2019 Q1d）** → 限制严 → 价格高 → 买不起 → 变成租户 → 低homeownership rate
 
 **两个政治经济学理论的区别：**
-- Homevoter (Fischel)：**民主选举机制**被现有房主捕获 → 投票反对新建
-- Influential landowner (H&RN)：**游说机制**被大地主捕获 → 限制竞争、保护地租
+- Homevoter (Fischel)：**民主选举**机制被现有房主捕获 → 投票反对新建
+- Influential landowner (H&RN)：**游说**机制被大地主捕获 → 限制竞争、保护地租
+- 写答案时先写Fischel（更intuitive），再写H&RN（更sophisticated）
 
-写答案时先写Fischel（更intuitive），再写H&RN（更sophisticated），最后说两者共同预测：开发程度越高的地区 → 限制越严格 → H&V实证证实。
+**实证证据不要只列数字，要说它为什么说明policy failure > market failure：**
+> "Hilber & Vermeulen (2016) estimate that US-style planning flexibility would reduce English house prices by 35%. This scale of distortion — driven primarily by regulatory rather than physical constraints (elasticity −0.13 vs −0.09) — is difficult to justify on market failure grounds alone, suggesting policy failure is the dominant force."
 
-**实证证据怎么呈现：**
-不要只列数字，要说为什么这个数字说明policy failure > market failure：
-> "Hilber & Vermeulen (2016) estimate that if England had adopted US-level planning flexibility, house prices would be 35% lower. This scale of distortion — driven primarily by regulatory rather than physical constraints — is difficult to justify on market failure grounds alone, suggesting that policy failure is the dominant force."
-
-**一个好的conclusion句：**
-> "The implication is not to abolish planning — genuine externalities justify some regulation — but to redesign it to be less captured by existing property interests, working with markets rather than against them."
+**Conclusion句（直接背）：**
+> "The implication is not to abolish planning — genuine externalities justify some regulation — but to redesign it to be less captured by existing property interests, working with markets rather than against them (Cheshire 2013)."
 
 ---
 
