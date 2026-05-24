@@ -4,12 +4,46 @@
 
 ---
 
+# ⭐ 优先级总排行（按重要程度）
+
+| 优先级 | 模型 | 考试类型 | 出现年份 | 备注 |
+|--------|------|----------|----------|------|
+| ★★★★★ | **MODEL 15**: Skyscrapers | AT 分题/论文 | 2019, 2020, 2021, 2022, 2024 | 5年！必考 |
+| ★★★★★ | **MODEL 11**: Cycles / Supply Constraints | WT 分题/论文 | 2018, 2020, 2021, 2022, 2023, 2024 | 每年都有 |
+| ★★★★★ | **MODEL 17**: Rosen-Roback / QoL | AT 分题/论文 | 2019, 2020, 2021, 2023 | 4年，含100分题 |
+| ★★★★★ | **MODEL 16**: Agglomeration Empirics | AT 分题/论文 | 2019, 2020, 2021, 2022 | 4年，含100分题 |
+| ★★★★★ | **MODEL 8**: Land Use Regulation | WT 分题/论文 | 2018, 2019, 2021, 2022, 2024, mock | 频率最高 |
+| ★★★★ | **MODEL 5**: Bid-Rent / Open-Closed City | AT 分题 | 2020, 2023 | 两年题几乎相同！ |
+| ★★★★ | **MODEL 7**: Tiebout / Fiscal Capitalization | WT 分题 | 2018, 2020, 2024 | 3年 |
+| ★★★★ | **MODEL 9**: Identification Problem & IV | WT 分题 | 2019, 2020, mock | 3年同题型 |
+| ★★★★ | **MODEL 10**: Housing Supply Elasticity | WT 分题/论文 | 2019, 2020, 2023, mock | 含100分题 |
+| ★★★★ | **MODEL 18**: Price-to-Rent / Commercial | WT 分题/论文 | 2022, 2023, 2024 | 近三年连续！ |
+| ★★★★ | **MODEL 4**: Sub-centres & Edge Cities | AT 分题 | 2018, 2021, mock | 含完整全题 |
+| ★★★★ | **MODEL 1**: AMM Monocentric City | AT 基础 | 几乎每年 | 所有题的基础框架 |
+| ★★★ | **MODEL 6**: Gentrification Welfare | WT 分题/论文 | 2019, 2021, 2024 | 3年 |
+| ★★★ | **MODEL 2**: Agglomeration & CBD Clusters | AT 分题 | 2019, 2021, 2022 | 常与MODEL 3/16合用 |
+| ★★★ | **MODEL 3**: Bilateral Spillovers | AT 分题 | 2021, 2022 | MODEL 2的深化 |
+| ★★★ | **MODEL 12**: Loss Aversion | WT 嵌入 | 2020, 2022, 2023 | 周期题的behavioural解释 |
+| ★★★ | **MODEL 13**: Cobweb Model | WT 嵌入 | 2020, 2021, 2022 | 商业地产/LV-PHX解释 |
+| ★★★ | **MODEL 14**: Irrational Exuberance | WT 嵌入 | 2020, 2022, 2023, 2024 | 泡沫/P-R比解释 |
+
+> **考试策略**: AT选最熟的1题(建议AT7/AT3/AT2之一)；WT选最熟的1题(建议Cycles/LUR/Supply Elasticity之一)
+
+---
+
 # AT MODELS (Bagagli)
 
 ---
 
-## MODEL 1 — AMM Monocentric City Model
+## MODEL 1 ★★★★ — AMM Monocentric City Model
 *Alonso (1964), Mills (1967), Muth (1969)*
+
+📅 **考试出现记录**
+- **2018 AT Q1**: MCM的micro-foundations；城市multicentric化；MCM是否还有用（三小题）
+- **2021 AT Q2A**: 用bid-rent模型解释income segregation（30分）
+- **2022 AT Q2a**: 为何residential rents随CBD距离下降（30分）
+- **Mock AT Essay**: 城市monocentric vs polycentric（100分）
+- ⚠️ **几乎所有AT题都用AMM作为基础框架**，考到suburbanization/CBD/bid-rent时必须先说AMM
 
 ### What it is
 The baseline model of urban spatial structure. Land goes to the highest bidder; firms cluster at the centre (CBD); residents sort by their trade-off between rent and commuting.
@@ -62,8 +96,14 @@ The baseline model of urban spatial structure. Land goes to the highest bidder; 
 
 ---
 
-## MODEL 2 — Agglomeration & CBD Concentration
+## MODEL 2 ★★★ — Agglomeration & CBD Concentration
 *Rosenthal & Strange (2020), Liotta et al. (2022), Heblich et al. (2020)*
+
+📅 **考试出现记录**
+- **2019 AT Q1a**: 为何firms和residents被城市吸引（40分）
+- **2021 AT Q1B**: 知识型服务业在City of London等业务区集聚的driving forces（40分）
+- **2022 AT Essay**: 为何经济活动在城市集聚（100分论文）
+- ⚠️ **通常与MODEL 3（Bilateral spillovers）和MODEL 16（Agglomeration empirics）合用**，单独考少
 
 ### What it is
 Why firms cluster near the CBD: not just transport access, but **productivity spillovers** that decay with distance.
@@ -111,8 +151,13 @@ Why firms cluster near the CBD: not just transport access, but **productivity sp
 
 ---
 
-## MODEL 3 — Bilateral Spillovers & Endogenous Agglomeration
+## MODEL 3 ★★★ — Bilateral Spillovers & Endogenous Agglomeration
 *Ahlfeldt & Wendland (2013), Ahlfeldt et al. (2020), Krugman (1991)*
+
+📅 **考试出现记录**
+- **2021 AT Q1B**: knowledge-based services在CBD集中的driving forces（40分）
+- **2022 AT Essay**: 为何经济活动空间集聚（100分）
+- ⚠️ **单独作为主题考的概率不大**；主要作为MODEL 2（agglomeration）的深化，或用来回答"为什么CBD能自我强化/path dependence"
 
 ### What it is
 The monocentric model treats CBD agglomeration as *given*. In reality, firms generate spillovers **with each other** — agglomeration is self-reinforcing and can arise anywhere.
@@ -161,8 +206,14 @@ The monocentric model treats CBD agglomeration as *given*. In reality, firms gen
 
 ---
 
-## MODEL 4 — Sub-centres & Edge Cities
+## MODEL 4 ★★★★ — Sub-centres & Edge Cities
 *McMillen & Smith (2003), Henderson & Mitra (1996), Fujita & Ogawa (1982)*
+
+📅 **考试出现记录**
+- **2018 AT Q2**: Garreau's "Edge City" — locational determinants, testing difficulties, advantages over core cities（全题，3小题）
+- **2021 AT Q1C**: Decentralisation into edge cities；planners是否应该鼓励？（30分）
+- **Mock AT Essay**: CBD monocentric vs polycentric城市（100分）
+- ⚠️ **2018年的完整Edge City全题是最重要参考**；2021年以sub-centre作为agglomeration大题的最后一问（"despite downtown strength, why decentralise?"）
 
 ### What it is
 Two routes to polycentric cities: sub-centres that emerge **organically** from many decentralised decisions, and **edge cities** built by a single developer.
@@ -213,8 +264,14 @@ Two routes to polycentric cities: sub-centres that emerge **organically** from m
 
 ---
 
-## MODEL 5 — LeRoy & Sonstiele (1983): 4-Stage Transport Cycle
+## MODEL 5 ★★★★ — LeRoy & Sonstiele (1983): 4-Stage Transport Cycle
 *LeRoy & Sonstiele (1983), Couture & Handbury (2020)*
+
+📅 **考试出现记录**
+- **2021 AT Q2B**: 两种解释wealthier households suburbanization的理论，且能解释reversal（40分）
+- **2024 WT Essay**: suburbanization and gentrification theories（100分）
+- **Mock AT Q1b**: one theory explaining suburbanization AND reversal（40分）
+- ⚠️ **这是解释"suburbanization → reversal/gentrification"最完整的单一理论**；适合40分题，因为能一口气解释suburbanization和reversal两个方向
 
 ### What it is
 A single theory that explains BOTH suburbanisation (rich move out) AND gentrification (rich return to city) through successive transport technology cycles.
@@ -262,8 +319,14 @@ Mock Q2(b)直接考这个，40分。必须做到：
 
 ---
 
-## MODEL 6 — Gentrification: Welfare Analysis
+## MODEL 6 ★★★ — Gentrification: Welfare Analysis
 *Guerrieri et al. (2013), Ellen & O'Regan (2011), Waights (2018), Ahlfeldt & Maennig (2015)*
+
+📅 **考试出现记录**
+- **2019 WT Essay**: 描述gentrification过程，causes and consequences（100分论文）
+- **2021 AT Q2C**: Gentrifying neighborhoods的winners and losers（30分）
+- **2024 WT Essay**: suburbanization and gentrification theories，real estate investor guidance（100分）
+- ⚠️ **2019年是纯WT gentrification论文，2024年合并suburbanization+gentrification**；核心考点是"谁受益、谁受损（homeowners vs renters vs displaced residents）"
 
 ### What it is
 Who wins and who loses when a neighbourhood gentrifies? The outcome depends critically on tenure (owner vs renter) and mobility costs.
@@ -331,8 +394,14 @@ Mock Q2(c) 30分，Mock反馈明确说：弱答案在"房主赢、租户输"就�
 
 ---
 
-## MODEL 7 — Tiebout (1956): Vote with Your Feet
+## MODEL 7 ★★★★ — Tiebout (1956): Vote with Your Feet
 *Tiebout (1956), Oates (1969), Black (1999), Gibbons et al. (2013)*
+
+📅 **考试出现记录**
+- **2018 WT Q1**: "fiscal differentials capitalized into house values" — 实证支持、分配含义、Tiebout-sorting是否减弱（全题，3小题）
+- **2020 WT Q2**: 去中心化provision优缺点；"voting with feet"实证；帮助落后地区的policy为何无效（全题，3小题）
+- **2024 WT Q1 a+b**: capitalization hypothesis实证（25分）；房价资本化对redistribution政策的含义（25分）
+- ⚠️ **2024年Q1把capitalization和LUR合并考**（c+d考LUR）；Tiebout通常作为"property value capitalization"的理论框架，不是单独考Tiebout机制
 
 ### What it is
 Efficient provision of local public goods through residential sorting and inter-jurisdictional competition. Households "vote with their feet" — relocating to the jurisdiction that best matches their tax-service preferences.
@@ -405,8 +474,17 @@ Place-based subsidies in supply-constrained areas → capitalised into land valu
 
 ---
 
-## MODEL 8 — Land Use Regulation: Market Failure vs Policy Failure
+## MODEL 8 ★★★★★ — Land Use Regulation: Market Failure vs Policy Failure
 *Fischel (2000), Hilber & Robert-Nicoud (2013), H&V (2016), Hsieh & Moretti (2019)*
+
+📅 **考试出现记录**
+- **2018 WT Essay**: Cheshire quote — "policy failure > market failure in Britain"（100分论文）
+- **2019 WT Q1**: LUR两个stylized facts成因（30分）；welfare justifications（20分）；empirical costs（30分）；homeownership & inner city（20分）
+- **2021 WT Q1**: LUR变得更widespread/stringent成因；LUR与住房可及性；protected views案例（全题）
+- **2022 WT Essay**: "land use planning — welfare"（100分论文）
+- **2024 WT Q1 c+d**: welfare justifications for LUR（25分）；costs, benefits, net welfare（25分）
+- **Mock WT Essay**: "land use planning/regulation"（100分）
+- ⚠️ **频率最高的WT主题**；要同时会：① market failure的理由（外部性、public goods）② 为什么policy failure更严重（NIMBY/homevoter）③ 实证成本（809%, +2% GDP等）
 
 ### What it is
 Two competing frameworks for why planning regulation exists and whether it is welfare-improving. Cheshire (2013): in Britain, **policy failure > market failure**.
@@ -479,8 +557,14 @@ Mock反馈明确：这道题"一阶概念缺口"是没有讲政治经济学理�
 
 ---
 
-## MODEL 9 — Identification Problem & IV/2SLS
+## MODEL 9 ★★★★ — Identification Problem & IV/2SLS
 *Bartik (1991), Saiz (2010), Mayer & Somerville (2000)*
+
+📅 **考试出现记录**
+- **2019 WT Q2a+b+c**: 估计supply elasticity的实证困难（40分）；方法论选择（30分）；estimating equation（30分）
+- **2020 WT Q1a**: 估计supply price elasticity的实证挑战（60分）
+- **Mock WT Q2 a+b+c**: 几乎与2019完全相同的题型
+- ⚠️ **题目几乎固定**："如果你要估计你家乡的supply elasticity，你怎么做？"三问：difficulties → methodology → equation。2019/2020/Mock三年重复
 
 ### What it is
 Why we cannot simply regress house prices on quantity to estimate supply or demand curves — and how instrumental variables solve this.
@@ -544,8 +628,15 @@ House prices and stock are non-stationary (trending). Regressing levels on level
 
 ---
 
-## MODEL 10 — Housing Supply Elasticity
+## MODEL 10 ★★★★ — Housing Supply Elasticity
 *H&V (2016), Saiz (2010), Mayer & Somerville (2000), Hilber & Mayer (2009), Hilber & Mense (2025)*
+
+📅 **考试出现记录**
+- **2019 WT Q2 (隐含在c+d)**: estimating equation中的supply shifters；locational factors
+- **2020 WT Q1b**: 决定supply elasticity的locational factors（40分）
+- **2023 WT Essay**: "supply inelasticity的implications for policy and local public goods"（100分论文）
+- **Mock WT Q2d**: locational factors that determine supply elasticity（30分）
+- ⚠️ **通常与MODEL 9（identification）一起考**；单独100分题在2023出现，强调policy implication（Help-to-Buy无效等）
 
 ### What it is
 How much does housing quantity respond to a price increase? Determined by physical geography and planning regulation.
@@ -619,8 +710,17 @@ Housing is highly durable — new construction is only 1–2% of total stock per
 
 ---
 
-## MODEL 11 — Real Estate Cycles: Supply Constraints Theory
+## MODEL 11 ★★★★★ — Real Estate Cycles: Supply Constraints Theory
 *Hilber & Vermeulen (2016), Saiz (2010)*
+
+📅 **考试出现记录**
+- **2018 WT Essay**: 不同类型real estate的cyclical properties（100分论文）
+- **2020 WT Q3a**: simple D&S considerations ignore哪些因素？（30分）
+- **2021 WT Essay**: residential vs commercial cycles类型差异（100分论文）
+- **2022 WT Q2a**: London/SF vs Newcastle/Columbus — 为何cycle程度不同（30分）
+- **2023 WT Q1a+b**: "cyclical"是什么意思？supply constraints有多重要？（各20分）
+- **2024 WT Essay**: price vs rent cycles，superstar cities，不同地产类型（100分论文）
+- ⚠️ **每年必考**；2022年是最典型的分题格式，要能解释"为什么London cycle大，Columbus cycle小"
 
 ### What it is
 Real estate price cycles as a **fundamental** phenomenon: demand shocks amplified by inelastic supply. Not a bubble — a structural outcome.
@@ -684,25 +784,35 @@ Real estate price cycles as a **fundamental** phenomenon: demand shocks amplifie
 
 ### 📌 中文备考注释
 
-**60分重点在哪：**
-这是WT Cycles Part(a)的Theory 1（fundamental explanation）。关键是要说清楚**为什么非弹性供给会产生周期**，而不只是说"供给弹性低所以价格高"。
+**60分重点在哪（适用所有cycles题型）：**
+关键是说清楚**为什么supply inelasticity会产生周期**，不是只说"供给少所以价格高"（那是level，不是cycle）。必须解释serial correlation + mean reversion机制。
 
 **核心逻辑链（必须走完）：**
-需求冲击（income↑ / population↑）→ 在非弹性供给市场 → 无法通过新建吸收 → 价格↑↑ → 序列相关（serial correlation）→ 最终均值回归（mean reversion）→ 这就是"周期"
+需求冲击 → supply inelastic → 无法新建吸收 → 价格↑↑ → 价格高于均衡会持续（serial correlation，因为预期调整慢）→ 但最终均值回归（mean reversion）→ 这就是cyclicality
 
-**Serial correlation + mean reversion这两个概念怎么解释：**
-> "This interaction generates the two defining features of real estate cycles: serial correlation — prices above trend tend to remain above trend as expectations adjust — and eventual mean reversion, as supply slowly responds or demand moderates."
+**三个题型的用法：**
+- **"为何London cycle大，Columbus小？"**（2022 Q2a）→ 直接用H&V：supply constraint + demand shock → 价格cycle；Columbus弹性高 → 数量调整而非价格
+- **"cyclical的定义"**（2023 Q1a）→ serial correlation（价格持续超过/低于trend）+ mean reversion（最终向均衡靠近）
+- **"supply constraints的重要性"**（2023 Q1b）→ H&V IV估计（0.29/0.30）+ counterfactuals（-35%, -45%, -48%）
 
-**SF vs Columbus的对比（必须举）：**
-San Francisco（非弹性）→ 极端繁荣-萧条；Columbus OH（弹性）→ 价格几乎没有波动。这是最直观的evidence，答题中一句话带过。
+**必须背的数字：**
+- H&V (2016) IV: regulatory constraint → price −0.29/−0.30***
+- Counterfactuals: 如果England像US那样规划宽松 → 房价低35%-48%
+- Favara & Imbs (2015): credit供给解释50-67% mortgage growth
 
-**和Theory 2（loss aversion）怎么衔接：**
-> "While H&V (2016) offer a fundamentals-based explanation for cycles, a complementary behavioural account focuses on why prices fall more slowly than they rise — specifically, loss aversion (Genesove & Mayer 2001)."
+**SF vs Columbus/Newcastle vs London对比（直接背这句话）：**
+> "San Francisco and London, characterised by tight supply constraints (H&V 2016), exhibit the largest and most persistent house price cycles. Columbus, Ohio and Newcastle, with more elastic supply, show much more muted cyclicality — demand shocks translate into quantity adjustments rather than price swings."
 
 ---
 
-## MODEL 12 — Real Estate Cycles: Loss Aversion
+## MODEL 12 ★★★ — Real Estate Cycles: Loss Aversion
 *Genesove & Mayer (2001, QJE), Kahneman & Tversky (prospect theory)*
+
+📅 **考试出现记录**
+- **2020 WT Q3a**: D&S分析ignore哪些因素？（30分）—— 可用loss aversion解释价格下行粘性
+- **2022 WT Q2a**: London/SF cycle大的解释（30分）—— 作为behavioural补充
+- **2023 WT Q1c**: 为何部分price cycles与economic shocks不同步（40分）
+- ⚠️ **从不单独成题**；作为cycles题的behavioural补充机制。和H&V合用：H&V解释upswing为什么大，loss aversion解释downswing为什么慢
 
 ### What it is
 A **behavioural** explanation for why house prices fall slowly in downturns: sellers resist realising nominal losses.
@@ -739,30 +849,35 @@ A **behavioural** explanation for why house prices fall slowly in downturns: sel
 
 ### 📌 中文备考注释
 
-**60分重点在哪：**
-这是WT Cycles Part(a)的Theory 2（behavioural explanation）。必须给三件事：mechanism + predictions + evidence。缺任何一个都是弱答案。
+**60分重点在哪（适用多种题型）：**
+这个model作为cycles题的**behavioural补充**出现，不单独成题。当题目问"为何价格下行缓慢"或"为何transaction volume在价格前先跌"时使用。必须给：① mechanism（prospect theory → reference point → 拒绝接受亏损） ② evidence（数字）③ predictions（三条）。
 
-**Mechanism的表述顺序：**
-1. 从prospect theory出发（losses feel more painful than equivalent gains）
-2. 应用到住房：reference point = 买入价格
-3. 当当前价格 < 买入价格 → nominal loss → 卖家拒绝接受损失
-4. → 挂牌价更高 → 在市场上停留更长 → 价格下行粘性
+**Mechanism（必须走完的逻辑链）：**
+prospect theory: losses > gains in utility → reference point = 买入价 → 当前价 < 买入价 → nominal loss → 卖家拒绝接受 → 挂牌价↑ → 市场停留更长 → **价格下行粘性**
 
-**数字怎么用（必须精确）：**
-- Asking price高 **3–18%**（这是范围，反映LTV程度）
-- Transaction price高 **3–7%**（比挂牌价低 — 说明卖家部分妥协了，但仍显著高于无损失卖家）
-- LTV越高 → 账面损失越深 → 效应越强
+**数字（必须精确）：**
+- Asking price高 **3–18%**（LTV越高效应越强）
+- Transaction price高 **3–7%**（卖家部分妥协但仍高于无损失卖家）
 
-**Predictions怎么写（高分）：**
-> "Loss aversion generates three predictions: first, prices in downturns decline more slowly than fundamentals would predict; second, transaction volumes collapse before prices fall — sellers exit the market rather than accept losses; third, markets with higher leverage (more sellers in nominal loss territory) experience more prolonged price stickiness."
+**三个Predictions（任何题型都能用）：**
+① downturns中价格比fundamentals预测下降更慢
+② **volume先于price下跌**（卖家宁愿撤出市场也不接受亏损）
+③ 高leverage市场（LTV高）→ loss aversion效应更强 → 价格粘性更久
 
-**这个theory和H&V互补关系：**
-H&V解释为什么**upswing**那么大（非弹性供给放大需求冲击）；Loss aversion解释为什么**downswing**那么慢（价格向下粘性）。两者放在一起是完整的cycles解释。
+**和H&V的互补关系（答cycles综合题时一定要说）：**
+H&V解释**upswing为什么大**（supply inelastic → 需求冲击全转化为价格）；
+Loss aversion解释**downswing为什么慢**（价格向下粘性）→ 两者合起来解释cycles的**非对称性**（涨快跌慢）
 
 ---
 
-## MODEL 13 — Cobweb Model & Construction Lag
+## MODEL 13 ★★★ — Cobweb Model & Construction Lag
 *Wheaton (1999)*
+
+📅 **考试出现记录**
+- **2020 WT Q3b+c**: 解释LV/PHX paradox（40分）；commercial vs residential差异（剩余marks）
+- **2021 WT Essay**: commercial vs residential cycles类型（100分）
+- **2022 WT Q2b**: overbuilding和high vacancy rates（40分）
+- ⚠️ **主要用途**：① 解释commercial > residential cycle（建设时滞3-7年 vs 1-2年）② 解释LV/PHX elastic market paradox（speculative demand + cobweb = quantity AND price boom）
 
 ### What it is
 Cyclical overshooting in construction due to the **time lag** between price signal and supply delivery.
@@ -796,24 +911,36 @@ Cyclical overshooting in construction due to the **time lag** between price sign
 
 ### 📌 中文备考注释
 
-**60分重点在哪：**
-Cobweb主要用在两个地方：① Part(a)选它作Theory之一（但不如H&V和Genesove & Mayer强）；② **LV/PHX Part(c)的核心解释**（20分）。
+**60分重点在哪（两种用途）：**
 
-**LV/PHX的解释套路（20分题别超过10分钟）：**
-三步：
-1. 说明paradox（弹性供给 → 按AMM理论不该有大价格周期）
-2. 解释：speculative demand（非基本面需求，由低利率/次贷驱动）+ Cobweb（建设时滞）
-3. 说弹性供给的paradox：弹性供给只能稳定**fundamental demand驱动**的价格，无法防止**speculative demand**驱动的周期
+**用途①：解释overbuilding/vacancy（2022 Q2b核心）**
+题目："extended periods of overbuilding and high vacancy" → cobweb mechanism走完：
+当前价格↑ → developers开始建 → 2-4年后才完工 → 市场环境可能已经逆转 → oversupply → vacancy↑ → 价格↓ → 又停止建设 → 循环
+
+**用途②：解释commercial > residential cycle（任何涉及这一比较的题）**
+两条渠道必须都说：
+① 建设时滞：commercial 3-7年 vs residential 1-2年 → cobweb幅度更大
+② 租约结构：commercial leases 5-25年 → 需求变化无法快速反映到实际成交租金 → 价格需要overshooting才能信号
+
+**LV/PHX Elastic Market Paradox（如果考到）：**
+三步答法：
+1. Paradox: 弹性供给市场按理不应有大价格波动
+2. 解释: non-fundamental speculative demand（低利率/次贷驱动）不是fundamental demand → 弹性供给无法稳定speculative需求驱动的价格
+3. 结果: 弹性供给反而使quantity boom-bust更大（建了大量房子，需求消失后积压）
 
 > "The elastic supply paradox: unlike San Francisco where supply inelasticity amplified fundamental demand shocks, Las Vegas and Phoenix experienced both price *and* quantity booms driven by non-fundamental speculative demand. When speculative demand collapsed post-2006, elastic construction had generated massive excess inventory, amplifying rather than dampening the price crash."
 
-**商业地产 > 住宅地产的原因（可能单独考）：**
-两个渠道：更长的建设时滞（3-7年 vs 1-2年）+ 更长的租约（5-25年 → 需求调整更慢）。两者叠加 → 商业地产cobweb效应更强。
-
 ---
 
-## MODEL 14 — Irrational Exuberance / Extrapolative Expectations
+## MODEL 14 ★★★ — Irrational Exuberance / Extrapolative Expectations
 *Case & Shiller (1988, 1989, 2003, 2012)*
+
+📅 **考试出现记录**
+- **2020 WT Q3b**: 解释Japan bubble和LV/PHX puzzle（40分）
+- **2022 WT Q2c**: price-to-rent ratios，superstar cities（30分）
+- **2023 WT Q1c+d**: non-synchronized cycles（40分）；price vs rent cycles（20分）
+- **2024 WT Essay**: price vs rent cycles，superstar cities（100分）
+- ⚠️ **作为所有cycles题的"behavioural explanation"**；2022年后随P/R ratio题的兴起，和Gordon Growth Model一起用来解释superstar cities的P/R高企
 
 ### What it is
 House prices deviate from fundamentals because buyers form **extrapolative expectations** — expecting past price growth to continue, even when fundamentals don't justify it.
@@ -844,24 +971,33 @@ House prices deviate from fundamentals because buyers form **extrapolative expec
 
 ### 📌 中文备考注释
 
-**60分重点在哪：**
-Case & Shiller主要用于Part(b)（fundamentals vs deviation from equilibrium），而不是Part(a)（两个theories）。作为Part(b)的第三个实证方法（survey approach）来用。
+**60分重点在哪（适用多种题型）：**
+Case & Shiller可用于三类题：① cycles中的behavioural解释（价格超出fundamentals）② P/R ratio高是否rational（superstar cities是bubble吗）③ non-synchronized cycles解释。核心是**survey evidence** + **区分rational vs extrapolative**的难度。
 
-**Part(b)三种方法的分工：**
-1. **Capozza et al. (2004)** — 回归方法：看fundamentals解释不了的serial correlation还有多少
-2. **H&V (2016)** — 结构性IV：isolate residual beyond fundamentals
-3. **Case & Shiller surveys** — 直接问买家预期：发现boom市场的预期超出fundamentals → extrapolative
+**用于cycles题（"非fundamental因素"）：**
+当题目问"哪些因素D&S分析ignore？"或"为何价格超出fundamental预测？"→
+- Mechanism: buyers observe past price rises → expect continuation → bid up current prices → self-fulfilling momentum → price overshoot fundamentals
+- Survey evidence: boom market buyers预期价格持续上涨的幅度超过long-run sustainable rates
+- 核心困难（必须说）: 无法区分rational forward-looking（fundamentals真的好）vs irrational extrapolative expectations
 
-**这个方法的核心困难（必须说）：**
-> "The central empirical challenge is that rational expectations and extrapolative expectations can generate observationally similar price paths. Survey data provides the most direct evidence but is subject to stated-preference bias — respondents may not act on their stated beliefs."
+**用于P/R ratio题（superstar cities）：**
+P/R高有两种解释：**rational**（g真的高，供给受限 + agglomeration → rent growth持续）vs **irrational**（extrapolative expectations）→ 结论：两者都可能共存，but survey evidence suggests behavioural component
 
-**总结Part(b)的conclusion怎么写：**
+**Conclusion句子（任何cycles综合题都能用）：**
 > "The empirical literature suggests that both fundamentals and non-fundamental deviations contribute to real estate cycles. In supply-constrained markets, fundamental demand shocks generate large price movements; behavioural factors — loss aversion (Genesove & Mayer) and extrapolative expectations (Case & Shiller) — amplify and prolong these movements beyond what fundamentals alone predict."
 
 ---
 
-## MODEL 15 — AT7: Skyscrapers & the Vertical Dimension
+## MODEL 15 ★★★★★ — AT7: Skyscrapers & the Vertical Dimension
 *Liu et al. (2018), Ahlfeldt & McMillen (2018), Ahlfeldt & Barr (2022)*
+
+📅 **考试出现记录**
+- **2019 AT Q3**: 垂直租金梯度的forces；developer最优高度与地价关系；distinguished architects policy（全题3小题）
+- **2020 AT Q3**: 自由竞争下optimal height的决定因素；地价↔楼高相关性；trophy architect welfare（全题3小题）
+- **2021 AT Q3**: floor space rents跨楼层的差异；developer为何在CBD建更高楼；NYC/HK可及性与height regulation（全题3小题）
+- **2022 AT Q2c**: developer为何在高rent区域建更高楼（30分）
+- **2024 AT Q2**: 最高楼集中在CBD的解释；建设成本降低→urbanization；放松限高的welfare effects（全题3小题）
+- ⚠️ **5/7年有完整AT题！** 题型非常固定：① 垂直梯度 ② 开发商最优高度/与地价关系 ③ 限高政策welfare
 
 ### What it is
 Extends the AMM model **vertically**: within a building, rent varies with floor height. Developers choose optimal building height by equating marginal revenue and marginal cost; height restrictions create welfare losses.
@@ -938,8 +1074,15 @@ Extends the AMM model **vertically**: within a building, rent varies with floor 
 
 ---
 
-## MODEL 16 — AT2: Agglomeration Externalities — Empirical Evidence
+## MODEL 16 ★★★★★ — AT2: Agglomeration Externalities — Empirical Evidence
 *Ciccone & Hall (1996), Henderson (1988), Glaeser et al. (1992), Ahlfeldt & Feddersen (2018), Duranton & Puga (2001)*
+
+📅 **考试出现记录**
+- **2019 AT Q1b**: agglomeration对productivity因果效应为何难建立；哪些empirical strategies？（30分）
+- **2020 AT Q1b**: 估计agglomeration对productivity效应的empirical strategies（40分）
+- **2021 AT Q1B**: knowledge-based services在CBD集中的driving forces（40分）
+- **2022 AT Essay**: 为何经济活动在城市间和城市内高度集聚（100分论文）
+- ⚠️ **每年都有，有时作为子题（30-40分），有时作为100分论文的核心**；OLS→FE→IV的递进识别是必须讲清楚的逻辑链
 
 ### What it is
 Attempts to **empirically identify** the causal effect of density / agglomeration on productivity. The core challenge is disentangling *agglomeration externalities* from *sorting* (more productive workers choose denser cities).
@@ -1029,8 +1172,15 @@ OLS (0.04-0.06) → **有sorting bias↑** → 个体固定效应 (0.02) → **�
 
 ---
 
-## MODEL 17 — AT3: Rosen-Roback & Quality of Life
+## MODEL 17 ★★★★★ — AT3: Rosen-Roback & Quality of Life
 *Rosen (1979), Roback (1982), Gibbons et al. (2011)*
+
+📅 **考试出现记录**
+- **2019 AT Q2**: 用wages+rents推导QoL（40分）；high QoL城市的features（30分）；firm attractiveness ranking（30分）
+- **2020 AT Essay**: spatial equilibrium framework，supply-constraining policies对city size的影响（100分论文）
+- **2021 AT Essay**: Rosen-Roback框架；place-based policies是否有意义（100分论文）
+- **2023 AT Essay**: "cities too big" — optimal city size（100分论文，相关联）
+- ⚠️ **4年中有3年是100分论文**！频率高且大题多；2019的分题格式是三个角度（QoL测量、features、firm ranking）；2021考place-based policy是否有意义
 
 ### What it is
 A **spatial equilibrium** framework: free mobility means households achieve equal utility across all cities; wages and rents adjust to compensate for differences in amenities (quality of life). The model allows us to *measure* quality of life from observable wages and rents.
@@ -1124,8 +1274,14 @@ London, Brighton → high rents + lower wages than fundamentals → residential 
 
 ---
 
-## MODEL 18 — WT: Price-to-Rent Ratio & Commercial Real Estate Cycles
+## MODEL 18 ★★★★ — WT: Price-to-Rent Ratio & Commercial Real Estate Cycles
 *Gordon Growth Model; Wheaton (1999); Case & Shiller (1988); Favara & Imbs (2015)*
+
+📅 **考试出现记录**
+- **2022 WT Q2c**: house prices比rents增长快；P/R ratio；superstar cities（30分）
+- **2023 WT Q1c**: price cycles与economic shocks不同步（40分）；Q1d: price vs rent cycles，superstar cities（20分）
+- **2024 WT Essay**: "price cycles比rent cycles更pronounced；superstar cities vs declining cities；residential vs office"（100分论文）
+- ⚠️ **近三年连续考，2024升级为100分论文**！必须会Gordon Growth Model推导 + 三个解释价格比租金更波动的原因 + commercial > residential的原因
 
 ### What it is
 The price-to-rent ratio (P/R) is the real estate equivalent of a P/E ratio in equities: it reflects how much buyers pay per unit of current income. Understanding why P/R varies — across cities, over time, and between asset classes — is central to diagnosing bubbles vs rational expectations.
