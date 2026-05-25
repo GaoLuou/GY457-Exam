@@ -1010,9 +1010,36 @@ House prices deviate from fundamentals because buyers form **extrapolative expec
 - Cannot directly observe whether expectations are rational or extrapolative from prices alone
 - Survey evidence is the primary tool
 
+### Application to P/R ratio & superstar cities (2022 Q2c / 2023 Q1d / 2024 Essay)
+
+**Why P/R rises above fundamentals:**
+- Recall Gordon Growth Model: P/R = 1/(r − g)
+- Rational P/R is high when r is low or g (expected rent growth) is genuinely high
+- **But:** if buyers extrapolate *past price growth* (not rent growth) into future → they bid up P further → P/R rises *beyond* what r and g justify
+- Key distinction: **P reflects expectations**; **R reflects current cash flows** (locked into leases)
+- → Extrapolative expectations affect P but not R → P/R overshoots
+
+**Why superstar city P/R is high — two competing explanations:**
+
+| Explanation | Mechanism | Verdict |
+|------------|-----------|---------|
+| **Rational** | g genuinely high: supply constraints + agglomeration → persistent rent growth → P/R = 1/(r−g) legitimately elevated | Supported by long-run rent trends in London, NYC |
+| **Irrational** (Case & Shiller) | Buyers extrapolate past *price* appreciation, not fundamentals → P/R overshoots even rational forward-looking value | Supported by survey evidence of exuberant expectations |
+
+**The key empirical question:** Can high P/R in superstar cities persist? 
+- Rational view: yes, if supply stays constrained and agglomeration persists → g > g_other cities permanently
+- Behavioural view: no, eventually expectations reset → correction brings P/R back down
+
+**Why P/R is more cyclical than either P or R alone:**
+- Upswing: extrapolative expectations drive P up faster than R → P/R rises
+- Downswing: loss aversion slows P decline while R adjusts with lease expiry → P/R falls but slowly
+- → P/R has *wider* cycles than underlying fundamentals predict
+
 ### How to write it in exam
 
 > "Case & Shiller (1988, 1989, 2003) document extrapolative expectations in housing markets: survey evidence shows that buyers in boom markets expect continued price appreciation at rates inconsistent with long-run fundamentals. This 'irrational exuberance' generates momentum beyond what supply-demand fundamentals can explain — rising prices fuel further buying, pushing prices further above equilibrium. The main empirical difficulty is distinguishing rational forward-looking expectations (which could also justify price rises if fundamentals are expected to improve) from truly irrational extrapolation. Survey data provides the most direct evidence but may not reflect actual trading behaviour."
+
+> "For price-to-rent ratios in superstar cities, both rational and behavioural explanations coexist. Rationally, supply constraints and agglomeration externalities generate persistently high expected rent growth g, which raises P/R = 1/(r−g) without implying a bubble. However, Case & Shiller's survey evidence suggests buyers also extrapolate past *price* appreciation — not just fundamentals — pushing P/R beyond its rational value. The key test is whether the high g implied by elevated P/R is subsequently realised in actual rent growth."
 
 ### 📌 中文备考注释
 
